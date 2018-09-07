@@ -1,0 +1,21 @@
+:root {
+	--main-bg-color: #444;
+	--background-opacity: 0.9;
+}
+
+body {
+	background: url('./images/wolf.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body::after {
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background: rgba(68, 68, 68, 0.5);
+}
