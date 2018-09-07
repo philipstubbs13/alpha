@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 // import CSS
 import './Home.css';
 // import background image
@@ -11,7 +12,7 @@ class Home extends Component {
 				<img src={wolf} alt="wolf" className="bg" />
 				<header>
 					<h1 className="lg-heading">Phil Stubbs</h1>
-					<h2 className="sm-heading">Code Nerd | Awesome Dev | User Advocate</h2>
+					<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
 				</header>
 				<main className="home-main">
 					<div className="home-quote">
@@ -19,6 +20,11 @@ class Home extends Component {
 							When there are no more leaders to follow, <br />
 							<span className="quote-second-line">you must become one.</span>
 						</h2>
+					</div>
+					<div className="home-btn">
+						<Link to="/about" className="btn">
+							Learn more about me
+						</Link>
 					</div>
 				</main>
 			</div>

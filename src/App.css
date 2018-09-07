@@ -10,6 +10,7 @@ body {
 	padding: 2rem;
 }
 
+/* https://css-tricks.com/perfect-full-page-background-image/ */
 img.bg {
 	/* Set rules to fill background */
 	min-height: 100%;
@@ -55,6 +56,21 @@ h2 {
 header {
 	z-index: 2;
 	width: 100%;
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	border: 1px solid black;
+	margin-bottom: 0.3rem;
+	text-decoration: none;
+	background-color: black;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.btn:hover {
+	background: rgba(68, 68, 68, 0.5);
 }
 
 @media screen and (max-width: 1024px) {
