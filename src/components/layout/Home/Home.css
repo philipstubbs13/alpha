@@ -1,0 +1,10 @@
+.home-quote {
+	display: flex;
+	margin-top: 4rem;
+	text-align: center;
+	align-self: center;
+}
+
+.quote-second-line {
+	text-transform: uppercase;
+}

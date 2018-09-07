@@ -4,9 +4,27 @@
 }
 
 body {
-	background: url('./images/wolf.jpg');
-	background-attachment: fixed;
-	background-size: cover;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 2rem;
+}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: rgba(68, 68, 68, 0.5);
 }
 
 body::after {
@@ -18,4 +36,31 @@ body::after {
 	position: absolute;
 	z-index: -1;
 	background: rgba(68, 68, 68, 0.5);
+}
+
+h1,
+h2 {
+	margin: 0;
+	font-weight: 400;
+}
+
+.lg-heading {
+	font-size: 6rem;
+}
+
+.sm-heading {
+	font-size: 2rem;
+}
+
+header {
+	z-index: 2;
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	/* Specific to this particular image */
+	img.bg {
+		left: 50%;
+		margin-left: -512px; /* 50% */
+	}
 }
