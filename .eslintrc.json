@@ -1,0 +1,12 @@
+{
+	"extends": "airbnb",
+	"parser": "babel-eslint",
+	"rules": {
+		"react/jsx-filename-extension": 0,
+		"implicit-arrow-linebreak": 0,
+		"linebreak-style": 0,
+		"react/jsx-one-expression-per-line": 0,
+		"react/prefer-stateless-function": 0,
+		"jsx-a11y/label-has-for": 0
+	}
+}
