@@ -1,0 +1,39 @@
+body {
+	background: #444;
+}
+
+.header {
+	color: #fff;
+}
+
+.bio {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.about-main {
+	margin-top: 4rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 'image bio bio';
+}
+
+.bio-img {
+	grid-area: 'image';
+	width: 256px;
+	height: 256px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.bio {
+	grid-area: bio;
+}
+
+.about-card {
+	margin-top: 3rem;
+	color: #fff;
+	background-color: #555;
+	padding: 1rem;
+}
