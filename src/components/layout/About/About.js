@@ -19,10 +19,14 @@ class About extends Component {
 					<main className="about-main">
 						<img src={bioImage} alt="Phil Stubbs" className="bio-img" />
 						<div className="bio">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa eaque nesciunt!
-							Odio, ipsum labore. Ab enim officia aspernatur quas, impedit harum maiores omnis soluta iste
-							nulla quidem dolores, corrupti nemo. Nisi debitis accusamus a accusantium, repudiandae
-							nostrum quas veritatis?
+							<p>
+								As a kid, I liked challenging myself to explore new opportunities whether it be learning
+								another language, learning how to play piano, trying out for the basketball team despite
+								not being as tall as other players, or striving to be one of the best chess players at
+								school. I always found different ways to solve problems whether it be figuring out how
+								to solve a difficult problem in math class, how to be a couple moves ahead of my chess
+								opponent, or how to be an efficient three point shooter on the basketball court.
+							</p>
 						</div>
 						<div className="about-card">
 							<h2>Web Developer</h2>
