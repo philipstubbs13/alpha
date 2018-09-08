@@ -1,14 +1,42 @@
 .contact-card {
 	background: #c2c5cc;
 	margin-top: 3rem;
-	padding: 1rem;
-	text-align: 'center';
+	padding: 1.5rem 0rem;
 	font-size: 2rem;
 	border: 3px solid #7bad7b;
+	display: flex;
+	justify-content: center;
+	grid-area: 'card';
+	transition: all 0.5s ease-out;
+}
+
+.contact-card:hover {
+	background: transparent;
+	color: #7bad7b;
 }
 
 .contact-main {
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	grid-area: 'icons';
+	margin-top: 2.5rem;
+}
+
+.social {
+	width: 100px;
+	height: 100px;
+	transition: all 0.5s ease-out;
+	padding: 5px;
+}
+
+.social:hover {
+	width: 130px;
+	height: 130px;
 }
