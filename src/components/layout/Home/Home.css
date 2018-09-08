@@ -19,6 +19,10 @@
 	grid-area: 'header';
 }
 
+.home-header {
+	color: black !important;
+}
+
 .home-main {
 	grid-area: 'main';
 }
@@ -46,6 +50,7 @@ body {
 	height: 100%;
 	padding: 2rem;
 	background: rgba(68, 68, 68, 0.5);
+	opacity: 0.8;
 }
 
 body::after {

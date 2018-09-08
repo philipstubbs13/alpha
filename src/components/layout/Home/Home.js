@@ -11,9 +11,9 @@ class Home extends Component {
 			<div className="home">
 				<div className="home-container">
 					<img src={wolf} alt="wolf" className="bg" />
-					<header className="header">
+					<header className="header home-header">
 						<h1 className="lg-heading">
-							Phil <span className="heading-second-word">Stubbs</span>
+							Phil <span>Stubbs</span>
 						</h1>
 						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
 					</header>
