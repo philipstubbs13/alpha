@@ -5,3 +5,20 @@
 .home-btn {
 	margin-top: 2rem;
 }
+
+.home-container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		'header'
+		'main';
+}
+
+.header {
+	grid-area: 'header';
+}
+
+.home-main {
+	grid-area: 'main';
+}
