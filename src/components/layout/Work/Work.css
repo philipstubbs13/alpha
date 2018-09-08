@@ -1,0 +1,12 @@
+.work-main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin-top: 2rem;
+}
+
+.project-image {
+	width: 100%;
+	height: 250px;
+	border: 3px solid #7bad7b;
+}
