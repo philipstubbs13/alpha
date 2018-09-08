@@ -11,7 +11,9 @@ class About extends Component {
 			<div className="about">
 				<div className="about-container">
 					<header className="header">
-						<h1 className="lg-heading">About Me</h1>
+						<h1 className="lg-heading">
+							About <span className="heading-second-word">Me</span>
+						</h1>
 						<h2 className="sm-heading">Let me tell you my story...</h2>
 					</header>
 					<main className="about-main">

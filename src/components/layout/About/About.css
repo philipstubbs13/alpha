@@ -1,5 +1,5 @@
 body {
-	background: #444;
+	background: rgba(0, 20, 40, 0.9);
 }
 
 .header {
@@ -25,6 +25,7 @@ body {
 	height: 256px;
 	border-radius: 50%;
 	margin: auto;
+	border: 6px solid #7bad7b;
 }
 
 .bio {
@@ -33,7 +34,8 @@ body {
 
 .about-card {
 	margin-top: 3rem;
-	color: #fff;
+	color: #c2c5cc;
 	background-color: #555;
 	padding: 1rem;
+	border: 3px solid #7bad7b;
 }

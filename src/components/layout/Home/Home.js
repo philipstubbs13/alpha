@@ -9,10 +9,12 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="home">
-				<img src={wolf} alt="wolf" className="bg" />
 				<div className="home-container">
+					<img src={wolf} alt="wolf" className="bg" />
 					<header className="header">
-						<h1 className="lg-heading">Phil Stubbs</h1>
+						<h1 className="lg-heading">
+							Phil <span className="heading-second-word">Stubbs</span>
+						</h1>
 						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
 					</header>
 					<main className="home-main">

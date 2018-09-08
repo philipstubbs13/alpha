@@ -5,38 +5,9 @@
 
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	height: 100%;
 	margin: 0;
+	height: 100%;
 	padding: 2rem;
-}
-
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-img.bg {
-	/* Set rules to fill background */
-	min-height: 100%;
-	min-width: 1024px;
-
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
-
-	/* Set up positioning */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background: rgba(68, 68, 68, 0.5);
-}
-
-body::after {
-	content: '';
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-	background: rgba(68, 68, 68, 0.5);
 }
 
 h1,
@@ -74,6 +45,10 @@ header {
 	background: rgba(0, 0, 0, 0);
 	padding: 1rem 2rem;
 	color: black;
+}
+
+.heading-second-word {
+	color: #7bad7b;
 }
 
 @media screen and (max-width: 1024px) {
