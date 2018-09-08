@@ -175,8 +175,11 @@ class Work extends Component {
 					</header>
 					<main className="work-main">
 						{projects.map(project => (
-							<div className="project">
+							<div className="project" key={project.id}>
 								<img src={project.image} alt={project.name} className="project-image" />
+								<div className="project-name">
+									<h2>{project.name}</h2>
+								</div>
 								<a href={project.live} target="_blank" rel="noopener noreferrer">
 									<div className="live-link project-btn">
 										<i className="far fa-eye" /> Live
