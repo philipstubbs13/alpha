@@ -8,5 +8,45 @@
 .project-image {
 	width: 100%;
 	height: 250px;
+	border: 3px solid #fff;
+}
+
+.project-image:hover {
 	border: 3px solid #7bad7b;
+	opacity: 0.5;
+	transition: all 0.5s ease-out;
+}
+
+.project-link {
+	padding: 0.7rem 1.7rem;
+	border: 1px solid black;
+	margin-bottom: 0.3rem;
+	text-decoration: none;
+	background-color: black;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	transition: all 0.5s ease-out;
+	text-align: center;
+}
+
+.project-link:hover,
+.live-link:hover {
+	background: rgba(0, 0, 0, 0);
+	background-color: #7bad7b;
+	color: black;
+}
+
+.live-link {
+	margin-top: 5px;
+	padding: 0.7rem 1.7rem;
+	border: 1px solid black;
+	margin-bottom: 0.3rem;
+	text-decoration: none;
+	background-color: #555;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	transition: all 0.5s ease-out;
+	text-align: center;
 }
