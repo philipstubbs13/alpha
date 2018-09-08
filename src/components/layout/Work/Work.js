@@ -1,149 +1,168 @@
+// import React
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-// import CSS
+// import CSS for Projects page.
 import './Work.css';
+// import/require images
+const Swag = require('../../../images/swag.png');
+const HealthTracker = require('../../../images/healthtracker2.png');
+const ClickMe = require('../../../images/clickme2.png');
+const MyCookingAssistant = require('../../../images/pizza2.png');
+const SequelizedBurger = require('../../../images/sequelburger2.png');
+const AdoptMe = require('../../../images/adoptme.png');
+const GifFinder = require('../../../images/giffinder.PNG');
+const Hangman = require('../../../images/hangman3.png');
+const CarpoolBuddy = require('../../../images/carpool.png');
+const Bamazon = require('../../../images/bamazon3.jpg');
+const AwesomeBurger = require('../../../images/burger2.png');
+const CrystalCollectors = require('../../../images/crystal2.png');
+const Liri = require('../../../images/twitter.jpg');
+const StarWars = require('../../../images/starwars2.png');
+const TriviaGame = require('../../../images/stadium.jpg');
+const ConstructorHangman = require('../../../images/skyline.jpg');
+const TrainBuilder = require('../../../images/mytrainbuilder.png');
+const ReactSearch = require('../../../images/news2.png');
+const BasketballScraper = require('../../../images/scraper.png');
 
+// Create an array called projects that I can map over
+// to render all of my projects to the projects page.
+// This keeps the code DRY.
 const projects = [
 	{
 		id: 0,
 		name: 'Running with Swag',
 		live: 'https://running-with-swag.firebaseapp.com/',
 		github: 'https://github.com/philipstubbs13/running-with-swag',
-		image: require('../../../images/swag.png'),
+		image: Swag,
 	},
 	{
 		id: 1,
 		name: 'HealthTracker',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/healthtracker2.png'),
+		image: HealthTracker,
 	},
 	{
 		id: 2,
 		name: 'ClickMe',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/clickme2.png'),
+		image: ClickMe,
 	},
 	{
 		id: 3,
 		name: 'MyCookingAssistant',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/pizza2.png'),
+		image: MyCookingAssistant,
 	},
 	{
 		id: 4,
 		name: 'Sequelized Burger',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/sequelburger2.png'),
+		image: SequelizedBurger,
 	},
 	{
 		id: 5,
 		name: 'AdoptMe',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/adoptme.png'),
+		image: AdoptMe,
 	},
 	{
 		id: 6,
 		name: 'Athlete hall of gifs',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/giffinder.PNG'),
+		image: GifFinder,
 	},
 	{
 		id: 7,
 		name: 'Hangman',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/hangman3.png'),
+		image: Hangman,
 	},
 	{
 		id: 8,
 		name: 'Carpool Buddy',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/carpool.png'),
+		image: CarpoolBuddy,
 	},
 	{
 		id: 9,
 		name: 'Bamazon',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/bamazon3.jpg'),
+		image: Bamazon,
 	},
 	{
 		id: 10,
 		name: 'Awesome Burger',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/burger2.png'),
+		image: AwesomeBurger,
 	},
 	{
 		id: 11,
 		name: 'Crystal Collectors',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/crystal2.png'),
+		image: CrystalCollectors,
 	},
 	{
 		id: 12,
 		name: 'LIRI',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/twitter.jpg'),
+		image: Liri,
 	},
 	{
 		id: 13,
 		name: 'Star Wars RPG Game',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/starwars2.png'),
+		image: StarWars,
 	},
 	{
 		id: 14,
 		name: 'Trivia Game',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/stadium.jpg'),
+		image: TriviaGame,
 	},
 	{
 		id: 15,
 		name: 'Constructor Hangman',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/skyline.jpg'),
+		image: ConstructorHangman,
 	},
 	{
 		id: 16,
 		name: 'myTrainBuilder',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/mytrainbuilder.png'),
+		image: TrainBuilder,
 	},
 	{
 		id: 17,
 		name: 'New York Times React Search',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/news2.png'),
+		image: ReactSearch,
 	},
 	{
 		id: 18,
 		name: 'BasketballScraper',
 		live: 'https://myhealthtracker.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/MedLog',
-		image: require('../../../images/scraper.png'),
+		image: BasketballScraper,
 	},
 ];
 
 class Work extends Component {
-	componentDidMount() {
-		console.log(projects);
-	}
-
 	render() {
 		return (
 			<div className="work">
