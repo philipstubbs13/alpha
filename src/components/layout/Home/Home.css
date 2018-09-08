@@ -45,6 +45,7 @@ body {
 	margin: 0;
 	height: 100%;
 	padding: 2rem;
+	background: rgba(68, 68, 68, 0.5);
 }
 
 body::after {
@@ -55,5 +56,5 @@ body::after {
 	right: 0;
 	position: absolute;
 	z-index: -1;
-	background: rgba(68, 68, 68, 0.5);
+	/* background: rgba(68, 68, 68, 0.5); */
 }
