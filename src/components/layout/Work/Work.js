@@ -2,28 +2,148 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // import CSS
 import './Work.css';
-// import images
-import Swag from '../../../images/swag.png';
-import HealthTracker from '../../../images/healthtracker2.png';
-import Scraper from '../../../images/scraper.png';
-import ClickMe from '../../../images/clickme2.png';
-import MyCookingAssistant from '../../../images/pizza2.png';
-import SequelBurger from '../../../images/sequelburger2.png';
-import AdoptMe from '../../../images/adoptme.png';
-import GifFinder from '../../../images/giffinder.PNG';
-import Hangman from '../../../images/hangman3.png';
-import Carpool from '../../../images/carpool.png';
-import Burger from '../../../images/burger2.png';
-import Bamazon from '../../../images/bamazon3.jpg';
-import Crystal from '../../../images/crystal2.png';
-import Liri from '../../../images/twitter.jpg';
-import StarWars from '../../../images/starwars2.png';
-import Trivia from '../../../images/stadium.jpg';
-import ConstructorHangman from '../../../images/skyline.jpg';
-import TrainBuilder from '../../../images/mytrainbuilder.png';
-import ReactNews from '../../../images/news2.png';
+
+const projects = [
+	{
+		id: 0,
+		name: 'Running with Swag',
+		live: 'https://running-with-swag.firebaseapp.com/',
+		github: 'https://github.com/philipstubbs13/running-with-swag',
+		image: require('../../../images/swag.png'),
+	},
+	{
+		id: 1,
+		name: 'HealthTracker',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/healthtracker2.png'),
+	},
+	{
+		id: 2,
+		name: 'ClickMe',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/clickme2.png'),
+	},
+	{
+		id: 3,
+		name: 'MyCookingAssistant',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/pizza2.png'),
+	},
+	{
+		id: 4,
+		name: 'Sequelized Burger',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/sequelburger2.png'),
+	},
+	{
+		id: 5,
+		name: 'AdoptMe',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/adoptme.png'),
+	},
+	{
+		id: 6,
+		name: 'Athlete hall of gifs',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/giffinder.PNG'),
+	},
+	{
+		id: 7,
+		name: 'Hangman',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/hangman3.png'),
+	},
+	{
+		id: 8,
+		name: 'Carpool Buddy',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/carpool.png'),
+	},
+	{
+		id: 9,
+		name: 'Bamazon',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/bamazon3.jpg'),
+	},
+	{
+		id: 10,
+		name: 'Awesome Burger',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/burger2.png'),
+	},
+	{
+		id: 11,
+		name: 'Crystal Collectors',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/crystal2.png'),
+	},
+	{
+		id: 12,
+		name: 'LIRI',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/twitter.jpg'),
+	},
+	{
+		id: 13,
+		name: 'Star Wars RPG Game',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/starwars2.png'),
+	},
+	{
+		id: 14,
+		name: 'Trivia Game',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/stadium.jpg'),
+	},
+	{
+		id: 15,
+		name: 'Constructor Hangman',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/skyline.jpg'),
+	},
+	{
+		id: 16,
+		name: 'myTrainBuilder',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/mytrainbuilder.png'),
+	},
+	{
+		id: 17,
+		name: 'New York Times React Search',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/news2.png'),
+	},
+	{
+		id: 18,
+		name: 'BasketballScraper',
+		live: 'https://myhealthtracker.herokuapp.com/',
+		github: 'https://github.com/philipstubbs13/MedLog',
+		image: require('../../../images/scraper.png'),
+	},
+];
 
 class Work extends Component {
+	componentDidMount() {
+		console.log(projects);
+	}
+
 	render() {
 		return (
 			<div className="work">
@@ -35,179 +155,22 @@ class Work extends Component {
 						<h2 className="sm-heading">Here&#39;s what I&#39;m working on...</h2>
 					</header>
 					<main className="work-main">
-						<div className="project">
-							<img src={Swag} alt="running with swag website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
+						{projects.map(project => (
+							<div className="project">
+								<img src={project.image} alt={project.name} className="project-image" />
+								<a href={project.live} target="_blank" rel="noopener noreferrer">
+									<div className="live-link project-btn">
+										<i className="far fa-eye" /> Live
+									</div>
+								</a>
+								<a href={project.github} target="_blank" rel="noopener noreferrer">
+									<div className="project-link project-btn">
+										<i className="fab fa-github" /> GitHub
+									</div>
+								</a>
 							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={HealthTracker} alt="HealthTracker website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Scraper} alt="Web scraper website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={ClickMe} alt="ClickMe game website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={MyCookingAssistant} alt="Cooking website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={SequelBurger} alt="Sequel burger website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={AdoptMe} alt="pet match website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={GifFinder} alt="Gif finding website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Hangman} alt="Hangman game website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Carpool} alt="Carpool matching website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Bamazon} alt="Bamazon website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Burger} alt="Burger website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Crystal} alt="Crystal Collectors game website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Liri} alt="Liri website" className="project-image" />
-							<div className="live-link project-btn">
-								{' '}
-								<i className="far fa-eye" />
-								Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={StarWars} alt="Star wars role playing game website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={Trivia} alt="Super bowl trivia game website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={ConstructorHangman} alt="Constructor Hangman website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={TrainBuilder} alt="Train schedule builder website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
-						<div className="project">
-							<img src={ReactNews} alt="React news website" className="project-image" />
-							<div className="live-link project-btn">
-								<i className="far fa-eye" /> Live
-							</div>
-							<div className="project-link project-btn">
-								<i className="fab fa-github" /> GitHub
-							</div>
-						</div>
+						))}
+						;
 					</main>
 				</div>
 			</div>
