@@ -1,5 +1,7 @@
 // import React
 import React, { Component } from 'react';
+// import Header component
+import Header from '../../Header';
 // import CSS for Projects page.
 import './Work.css';
 // import/require images
@@ -167,12 +169,11 @@ class Work extends Component {
 		return (
 			<div className="work">
 				<div className="work-container">
-					<header className="header">
-						<h1 className="lg-heading">
-							My <span className="heading-second-word">Projects</span>
-						</h1>
-						<h2 className="sm-heading">Here&#39;s what I&#39;m working on...</h2>
-					</header>
+					<Header
+						firstPhrase="My"
+						secondPhrase="Projects"
+						subHeading="Here&#39;s what I&#39;m working on..."
+					/>
 					<main className="work-main">
 						{projects.map(project => (
 							<div className="project" key={project.id}>
@@ -200,4 +201,6 @@ class Work extends Component {
 	}
 }
 
+// export the Work component so that it can be imported into App.js
+// and then rendered to the page.
 export default Work;

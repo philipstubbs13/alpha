@@ -1,5 +1,7 @@
 // import React
 import React, { Component } from 'react';
+// import Header component
+import Header from '../../Header';
 // import CSS
 import './Contact.css';
 // import/require social media icons/images
@@ -50,19 +52,18 @@ class Contact extends Component {
 		return (
 			<div className="contact">
 				<div className="contact-container">
-					<header className="header">
-						<h1 className="lg-heading">
-							Contact <span className="heading-second-word">Me</span>
-						</h1>
-						<h2 className="sm-heading">Get in touch with me to get the ball rolling...</h2>
-					</header>
+					<Header
+						firstPhrase="Contact"
+						secondPhrase="Me"
+						subHeading="Get in touch with me to get the ball rolling..."
+					/>
 					<main className="contact-main">
 						<div className="contact-card">philipstubbs13@gmail.com</div>
 						<div className="contact-card">952-454-3933</div>
 					</main>
 					<div className="social-icons">
 						{socialIcons.map(social => (
-							<a href={social.link} target="_blank" rel="noopener noreferrer">
+							<a href={social.link} target="_blank" rel="noopener noreferrer" key={social.id}>
 								<img src={social.image} alt={social.name} className="social" />
 							</a>
 						))}

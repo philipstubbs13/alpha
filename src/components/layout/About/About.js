@@ -3,18 +3,15 @@ import React, { Component } from 'react';
 import './About.css';
 // import bio image
 import bioImage from '../../../images/me.jpg';
+// import Header component
+import Header from '../../Header';
 
 class About extends Component {
 	render() {
 		return (
 			<div className="about">
 				<div className="about-container">
-					<header className="header">
-						<h1 className="lg-heading">
-							About <span className="heading-second-word">Me</span>
-						</h1>
-						<h2 className="sm-heading">Let me tell you my story...</h2>
-					</header>
+					<Header firstPhrase="About" secondPhrase="Me" subHeading="Let me tell you my story" />
 					<main className="about-main">
 						<img src={bioImage} alt="Phil Stubbs" className="bio-img" />
 						<div className="bio">
