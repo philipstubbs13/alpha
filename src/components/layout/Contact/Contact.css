@@ -40,3 +40,10 @@
 	width: 130px;
 	height: 130px;
 }
+
+/* Media Query - 950px screen or smaller */
+@media (max-width: 950px) {
+	.contact-main {
+		grid-template-columns: 1fr;
+	}
+}

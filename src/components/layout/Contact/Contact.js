@@ -57,14 +57,8 @@ class Contact extends Component {
 						<h2 className="sm-heading">Get in touch with me to get the ball rolling...</h2>
 					</header>
 					<main className="contact-main">
-						<div className="contact-card">
-							<span>Email:</span>
-							&nbsp; philipstubbs13@gmail.com
-						</div>
-						<div className="contact-card">
-							<span>Phone:</span>
-							&nbsp; 952-454-3933
-						</div>
+						<div className="contact-card">philipstubbs13@gmail.com</div>
+						<div className="contact-card">952-454-3933</div>
 					</main>
 					<div className="social-icons">
 						{socialIcons.map(social => (
