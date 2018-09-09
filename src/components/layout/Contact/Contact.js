@@ -1,12 +1,49 @@
+// import React
 import React, { Component } from 'react';
 // import CSS
 import './Contact.css';
-// import images
-import Facebook from '../../../images/facebook.svg';
-import LinkedIn from '../../../images/linkedin.svg';
-import Twitter from '../../../images/twitter.svg';
-import GitHub from '../../../images/github.svg';
-import Stackoverflow from '../../../images/stackoverflow.svg';
+// import/require social media icons/images
+const Facebook = require('../../../images/facebook.svg');
+const LinkedIn = require('../../../images/linkedin.svg');
+const Twitter = require('../../../images/twitter.svg');
+const GitHub = require('../../../images/github.svg');
+const Stackoverflow = require('../../../images/stackoverflow.svg');
+
+// Create an array called socialIcons that I can map over
+// to render all of my icons to the contact page.
+// This keeps the code DRY.
+const socialIcons = [
+	{
+		id: 0,
+		link: 'https://www.facebook.com/phil.stubbs.13',
+		image: Facebook,
+		name: 'Facebook',
+	},
+	{
+		id: 1,
+		link: 'https://www.linkedin.com/in/philipjstubbs/',
+		image: LinkedIn,
+		name: 'LinkedIn',
+	},
+	{
+		id: 2,
+		link: 'https://github.com/philipstubbs13',
+		image: GitHub,
+		name: 'GitHub',
+	},
+	{
+		id: 3,
+		link: 'https://twitter.com/iamPhilStubbs',
+		image: Twitter,
+		name: 'Twitter',
+	},
+	{
+		id: 4,
+		link: 'https://stackoverflow.com/users/8706269/phil',
+		image: Stackoverflow,
+		name: 'Stackoverflow',
+	},
+];
 
 class Contact extends Component {
 	render() {
@@ -30,25 +67,12 @@ class Contact extends Component {
 						</div>
 					</main>
 					<div className="social-icons">
-						<a href="https://www.facebook.com/phil.stubbs.13" target="_blank" rel="noopener noreferrer">
-							<img src={Facebook} alt="Facebook logo" className="social" />
-						</a>
-						<a href="https://twitter.com/iamPhilStubbs" target="_blank" rel="noopener noreferrer">
-							<img src={Twitter} alt="Twitter logo" className="social" />
-						</a>
-						<a href="https://www.linkedin.com/in/philipjstubbs/" target="_blank" rel="noopener noreferrer">
-							<img src={LinkedIn} alt="LinkedIn logo" className="social" />
-						</a>
-						<a href="https://github.com/philipstubbs13" target="_blank" rel="noopener noreferrer">
-							<img src={GitHub} alt="GitHub logo" className="social" />
-						</a>
-						<a
-							href="https://stackoverflow.com/users/8706269/phil"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src={Stackoverflow} alt="Stackoverflow logo" className="social" />
-						</a>
+						{socialIcons.map(social => (
+							<a href={social.link} target="_blank" rel="noopener noreferrer">
+								<img src={social.image} alt={social.name} className="social" />
+							</a>
+						))}
+						;
 					</div>
 				</div>
 			</div>
@@ -56,4 +80,6 @@ class Contact extends Component {
 	}
 }
 
+// export the Contact component so that it can be imported into App.js
+// and rendered to the page.
 export default Contact;
