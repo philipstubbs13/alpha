@@ -30,24 +30,24 @@ class About extends Component {
 						<div className="about-card">
 							<h2>Web Developer</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus nobis quas velit.
-								Distinctio, nam. Obcaecati dolore debitis tempore repellat. Iure exercitationem laborum
-								corrupti perspiciatis, ad voluptate odio cum. Sunt.
+								Passionate about learning and using new web technologies to plan, design, and build
+								applications that help make people&#39;s lives simple.
 							</p>
 						</div>
 						<div className="about-card">
 							<h2>Project Manager</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto a, ex ipsum
-								magnam similique nostrum. Tenetur, quisquam rem earum, blanditiis reprehenderit dolore
-								beatae veniam deserunt quis nobis, ut optio?
+								Experience with managing and planning individual and team projects as well as finding
+								creative solutions to keep projects on track and ensure they are closed in a timely
+								manner.
 							</p>
 						</div>
 						<div className="about-card">
 							<h2>Writer</h2>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo sequi qui,
-							tenetur adipisci impedit illo pariatur ducimus magni? Blanditiis dignissimos aliquid
-							excepturi quidem ducimus exercitationem architecto natus necessitatibus beatae.
+							<p>
+								Able to digest and transform complex, technical information and present it in a succinct
+								way for fast and easy comprehension.
+							</p>
 						</div>
 					</main>
 				</div>
