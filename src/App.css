@@ -56,3 +56,13 @@ a {
 		margin-left: -512px; /* 50% */
 	}
 }
+
+@media screen and (max-width: 550px) {
+	.lg-heading {
+		font-size: 4rem;
+	}
+
+	.sm-heading {
+		font-size: 1.5rem;
+	}
+}
