@@ -23,7 +23,7 @@ class Menu extends Component {
 								<Link to="/about">About Me</Link>
 							</li>
 							<li className="nav-link">
-								<Link to="/work">Projects</Link>
+								<Link to="/work">My Work</Link>
 							</li>
 							<li className="nav-link">
 								<Link to="/contact">Contact Me</Link>

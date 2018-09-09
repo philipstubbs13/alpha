@@ -18,14 +18,18 @@
 	overflow: hidden;
 }
 
+.menu-nav {
+	background: #7bad7b;
+}
+
 .nav-link {
 	color: #fff;
 	list-style-type: none;
 	position: relative;
-	font-size: 30px;
+	font-size: 40px;
 	text-transform: uppercase;
 	padding: 1rem 0;
-	font-weight: 300;
+	font-weight: 600;
 }
 
 .nav-link:hover {

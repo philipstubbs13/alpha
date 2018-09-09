@@ -172,11 +172,7 @@ class Work extends Component {
 			<div className="work">
 				<div className="work-container">
 					<MenuButton />
-					<Header
-						firstPhrase="My"
-						secondPhrase="Projects"
-						subHeading="Here&#39;s what I&#39;m working on..."
-					/>
+					<Header firstPhrase="My" secondPhrase="Work" subHeading="Here&#39;s what I&#39;m working on..." />
 					<main className="work-main">
 						{projects.map(project => (
 							<div className="project" key={project.id}>

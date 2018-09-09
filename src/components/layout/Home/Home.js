@@ -10,24 +10,34 @@ class Home extends Component {
 		return (
 			<div className="home">
 				<div className="home-container">
-					<img src={wolf} alt="wolf" className="bg" />
-					<header className="header home-header">
-						<h1 className="lg-heading">
-							Phil <span>Stubbs</span>
-						</h1>
-						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
-					</header>
-					<main className="home-main">
-						<h2 className="sm-heading">
-							When there are no more leaders to follow, <br />
-							<span className="quote-second-line">you must become one.</span>
-						</h2>
-						<div className="home-btn">
-							<Link to="/about" className="btn">
-								Learn more about me
-							</Link>
-						</div>
-					</main>
+					<div className="home-left">
+						<header className="header home-header">
+							<h1 className="lg-heading">
+								Phil <span>Stubbs</span>
+							</h1>
+							<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
+						</header>
+						<main className="home-main">
+							<h2 className="sm-heading">
+								When there are no more leaders to follow, <br />
+								<span className="quote-second-line">you must become one.</span>
+							</h2>
+							<div className="home-nav-links">
+								<Link to="/about" className="btn  home-btn">
+									About Me
+								</Link>
+								<Link to="/work" className="btn home-btn">
+									My Work
+								</Link>
+								<Link to="/contact" className="home-btn btn">
+									Contact Me
+								</Link>
+							</div>
+						</main>
+					</div>
+					<div className="home-right">
+						<img src={wolf} alt="wolf" className="bg" />
+					</div>
 				</div>
 			</div>
 		);
