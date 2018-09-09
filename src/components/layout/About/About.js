@@ -16,12 +16,15 @@ class About extends Component {
 						<img src={bioImage} alt="Phil Stubbs" className="bio-img" />
 						<div className="bio">
 							<p>
-								As a kid, I liked challenging myself to explore new opportunities whether it be learning
-								another language, learning how to play piano, trying out for the basketball team despite
-								not being as tall as other players, or striving to be one of the best chess players at
-								school. I always found different ways to solve problems whether it be figuring out how
-								to solve a difficult problem in math class, how to be a couple moves ahead of my chess
-								opponent, or how to be an efficient three point shooter on the basketball court.
+								Hey there! I&#39;m Phil, and welcome to my little corner of the Internet. I&#39;m a web
+								developer but also a writer, project manager, and runner. I enjoy creating user
+								interfaces as well as finding creative, unique ways to improve the usability of new or
+								existing web applications. I posted my work to this site to show you my passion of not
+								only learning the many tools of web development but also trying to solve problems
+								related to designing user interfaces, presenting information, and building applications
+								for the web. Another passion of mine is running. When I&#39;m not working on my next web
+								development project, I enjoy running in various races and along different trails in
+								Minnesota. If you would like to know more, let&#39;s get in touch!
 							</p>
 						</div>
 						<div className="about-card">

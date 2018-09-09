@@ -150,7 +150,7 @@ const projects = [
 	},
 	{
 		id: 17,
-		name: 'New York Times React Search',
+		name: 'NYT React Search',
 		live: 'https://react-nytimes-search.herokuapp.com/',
 		github: 'https://github.com/philipstubbs13/NYT-React-Search',
 		image: ReactSearch,
