@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 // Import PropTypes for props validation
 import PropTypes from 'prop-types';
+// Import css for Header component.
+import './Header.css';
 
 // Create a reusable component to be used as a header for all the different pages.
 class Header extends Component {

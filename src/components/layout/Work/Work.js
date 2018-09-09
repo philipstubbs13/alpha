@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 // import Header component
 import Header from '../../Header';
+// import MenuButton component
+import MenuButton from '../../MenuButton';
 // import CSS for Projects page.
 import './Work.css';
 // import/require images
@@ -169,6 +171,7 @@ class Work extends Component {
 		return (
 			<div className="work">
 				<div className="work-container">
+					<MenuButton />
 					<Header
 						firstPhrase="My"
 						secondPhrase="Projects"

@@ -5,13 +5,16 @@ import './About.css';
 import bioImage from '../../../images/me.jpg';
 // import Header component
 import Header from '../../Header';
+// import MenuButton component
+import MenuButton from '../../MenuButton';
 
 class About extends Component {
 	render() {
 		return (
 			<div className="about">
 				<div className="about-container">
-					<Header firstPhrase="About" secondPhrase="Me" subHeading="Let me tell you my story" />
+					<MenuButton />
+					<Header firstPhrase="About" secondPhrase="Me" subHeading="Let me tell you my story..." />
 					<main className="about-main">
 						<img src={bioImage} alt="Phil Stubbs" className="bio-img" />
 						<div className="bio">
@@ -28,14 +31,18 @@ class About extends Component {
 							</p>
 						</div>
 						<div className="about-card">
-							<h2>Web Developer</h2>
+							<h2>
+								<i className="far fa-check-square" /> Web Developer
+							</h2>
 							<p>
 								Passionate about learning and using new web technologies to plan, design, and build
 								applications that help make people&#39;s lives simple.
 							</p>
 						</div>
 						<div className="about-card">
-							<h2>Project Manager</h2>
+							<h2>
+								<i className="far fa-check-square" /> Project Manager
+							</h2>
 							<p>
 								Experience with managing and planning individual and team projects as well as finding
 								creative solutions to keep projects on track and ensure they are closed in a timely
@@ -43,7 +50,9 @@ class About extends Component {
 							</p>
 						</div>
 						<div className="about-card">
-							<h2>Writer</h2>
+							<h2>
+								<i className="far fa-check-square" /> Writer
+							</h2>
 							<p>
 								Able to digest and transform complex, technical information and present it in a succinct
 								way for fast and easy comprehension.

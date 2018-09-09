@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 // import Header component
 import Header from '../../Header';
+// import MenuButton component
+import MenuButton from '../../MenuButton';
 // import CSS
 import './Contact.css';
 // import/require social media icons/images
@@ -52,6 +54,7 @@ class Contact extends Component {
 		return (
 			<div className="contact">
 				<div className="contact-container">
+					<MenuButton />
 					<Header
 						firstPhrase="Contact"
 						secondPhrase="Me"
