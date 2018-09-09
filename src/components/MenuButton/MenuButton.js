@@ -1,5 +1,6 @@
 // Import React
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 // import css
 import './MenuButton.css';
 
@@ -10,21 +11,13 @@ class MenuButton extends Component {
 
 	render() {
 		return (
-			<div
-				className="menu-btn"
-				onClick={() => {
-					this.handleMenuClick();
-				}}
-				onKeyPress={() => {
-					this.handleMenuClick();
-				}}
-				role="button"
-				tabIndex={0}
-			>
-				<div className="btn-line" />
-				<div className="btn-line" />
-				<div className="btn-line" />
-			</div>
+			<Link to="/menu">
+				<div className="menu-btn">
+					<div className="btn-line" />
+					<div className="btn-line" />
+					<div className="btn-line" />
+				</div>
+			</Link>
 		);
 	}
 }

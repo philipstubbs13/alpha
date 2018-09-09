@@ -10,6 +10,7 @@ import About from './components/layout/About';
 import Work from './components/layout/Work';
 import Contact from './components/layout/Contact';
 import Skills from './components/layout/Skills';
+import Menu from './components/Menu';
 
 class App extends Component {
 	render() {
@@ -21,6 +22,7 @@ class App extends Component {
 						<Route exact path="/about" component={About} />
 						<Route exact path="/work" component={Work} />
 						<Route exact path="/contact" component={Contact} />
+						<Route exact path="/menu" component={Menu} />
 						{/* <Route exact path="/skills" component={Skills} /> */}
 					</Switch>
 				</div>
