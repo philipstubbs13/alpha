@@ -75,3 +75,24 @@
 	z-index: -1;
 	background: rgba(68, 68, 68, 0.5);
 } */
+
+/* Media Query - 1124px screen or smaller */
+@media (max-width: 1124px) {
+	.home-left {
+		align-items: start;
+	}
+
+	.home-nav-links {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* @media (max-width: 871px) {
+	.home {
+		grid-template-columns: 1fr;
+	}
+
+	.home-nav-links {
+		grid-template-columns: repeat(3, 1fr);
+	}
+} */

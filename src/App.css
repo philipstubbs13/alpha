@@ -60,11 +60,13 @@ a {
 	color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
-	/* Specific to this particular image */
-	img.bg {
-		left: 50%;
-		margin-left: -512px; /* 50% */
+@media screen and (max-width: 1124px) {
+	.lg-heading {
+		font-size: 4rem;
+	}
+
+	.sm-heading {
+		font-size: 1.5rem;
 	}
 }
 
