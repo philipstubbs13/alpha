@@ -16,30 +16,20 @@
 .home {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	background-image: url('../../../images/wolf.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
 }
 
 .home-left,
 .home-right {
 	height: 100vh;
+	overflow: hidden;
 }
 
-/* .home-left,
 .home-right {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: center;
-	float: left;
-	width: 50%;
-	height: 100vh;
-	overflow: hidden;
-} */
-
-.home-right {
-	background-image: url('../../../images/wolf.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
 }
 
 .home-left {

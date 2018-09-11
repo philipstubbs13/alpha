@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import Header component
-import Header from '../../Header';
 // import CSS
 import './Home.css';
 // import background image
@@ -12,11 +10,12 @@ class Home extends Component {
 		return (
 			<div className="home">
 				<div className="home-left">
-					<Header
-						firstPhrase="Phil"
-						secondPhrase="Stubbs"
-						subHeading="Web Developer, Project Manager, and Writer"
-					/>
+					<header className="home-header">
+						<h1 className="lg-heading">
+							Phil <span>Stubbs</span>
+						</h1>
+						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
+					</header>
 					<main className="home-main">
 						<h2 className="sm-heading">
 							When there are no more leaders to follow, <br />
