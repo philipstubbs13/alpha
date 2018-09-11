@@ -20,7 +20,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .home-left,
@@ -29,11 +29,15 @@
 	overflow: hidden;
 }
 
-.home-right {
-}
-
 .home-left {
 	padding: 0 2rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: end;
+}
+
+.home-main {
+	margin-bottom: 4rem;
 }
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
