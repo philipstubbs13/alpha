@@ -2,6 +2,10 @@ body {
 	background: rgba(0, 20, 40, 0.9);
 }
 
+.about {
+	padding: 2rem;
+}
+
 .header {
 	color: #fff;
 }
