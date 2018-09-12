@@ -17,7 +17,9 @@ class Home extends Component {
 						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
 					</header>
 					<main className="home-main">
-						<h2 className="sm-heading">When there are no more leaders to follow, you must become one.</h2>
+						<h2 className="sm-heading home-secondary-heading">
+							When there are no more leaders to follow, you must become one.
+						</h2>
 						<div className="home-nav-links">
 							<Link to="/about" className="btn  home-btn">
 								About Me

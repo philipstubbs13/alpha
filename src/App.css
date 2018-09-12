@@ -44,11 +44,13 @@ header {
 	text-transform: uppercase;
 	font-size: 1.3rem;
 	transition: all 0.5s ease-out;
+	font-weight: 500;
 }
 
 .btn:hover {
 	background: rgba(0, 0, 0, 0);
 	color: black;
+	font-weight: 500;
 }
 
 .heading-second-word {
