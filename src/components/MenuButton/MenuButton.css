@@ -11,5 +11,5 @@
 	width: 28px;
 	height: 3px;
 	margin: 0 0 5px 0;
-	background: #fff;
+	background: var(--app-light-color);
 }

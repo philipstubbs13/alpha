@@ -1,5 +1,5 @@
 .contact {
-	padding: 2rem;
+	padding: 3.5rem;
 }
 
 .contact-card {
@@ -7,7 +7,7 @@
 	margin-top: 3rem;
 	padding: 1.5rem 0rem;
 	font-size: 2rem;
-	border: 3px solid #7bad7b;
+	border: 3px solid var(--app-secondary-color);
 	display: flex;
 	justify-content: center;
 	grid-area: 'card';
@@ -16,7 +16,7 @@
 
 .contact-card:hover {
 	background: transparent;
-	color: #7bad7b;
+	color: var(--app-secondary-color);
 }
 
 .contact-main {

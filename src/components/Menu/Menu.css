@@ -19,11 +19,11 @@
 }
 
 .menu-nav {
-	background: #7bad7b;
+	background: var(--app-secondary-color);
 }
 
 .nav-link {
-	color: #fff;
+	color: var(--app-light-color);
 	list-style-type: none;
 	position: relative;
 	font-size: 40px;
@@ -33,5 +33,5 @@
 }
 
 .nav-link:hover {
-	color: #7bad7b;
+	color: var(--app-secondary-color);
 }

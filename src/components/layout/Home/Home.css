@@ -37,7 +37,7 @@
 }
 
 .home-secondary-heading {
-	color: #fff;
+	color: var(--app-light-color);
 }
 
 /* Media Query - 482px screen or smaller */
