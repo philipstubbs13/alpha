@@ -1,10 +1,37 @@
 /* Menu Button */
-.menu-btn {
+.side-menu-icon {
 	position: absolute;
 	z-index: 3;
 	right: 35px;
-	top: 35px;
 	cursor: pointer;
+}
+
+.side-menu-icon:hover {
+	color: var(--app-secondary-color);
+}
+
+.menu-btn {
+	top: 35px;
+}
+
+.fa-facebook {
+	top: 65px;
+}
+
+.fa-github-square {
+	top: 110px;
+}
+
+.fa-linkedin {
+	top: 155px;
+}
+
+.fa-twitter-square {
+	top: 200px;
+}
+
+.fa-stack-overflow {
+	top: 245px;
 }
 
 .btn-line {

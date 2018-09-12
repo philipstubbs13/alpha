@@ -15,7 +15,7 @@ class Home extends Component {
 					<Header
 						firstPhrase="Phil"
 						secondPhrase="Stubbs"
-						subHeading="Web Developer, Project Manager, and Developer"
+						subHeading="Developer, Project Manager, and Writer"
 					/>
 					<main className="home-main">
 						<h2 className="sm-heading home-secondary-heading">
