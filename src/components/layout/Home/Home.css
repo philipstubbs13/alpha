@@ -1,8 +1,12 @@
-.home-left {
+.home-container {
 	border: 1px solid transparent;
 	padding: 2rem;
 	background: rgba(68, 68, 68, 0.5);
 	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: end;
+	overflow: hidden;
 }
 
 .home-btn {
@@ -26,21 +30,6 @@
 	opacity: 0.6;
 	height: 100vh;
 	overflow: hidden;
-	display: grid;
-	align-items: end;
-}
-
-.home-left,
-.home-right {
-	height: 100vh;
-	overflow: hidden;
-}
-
-.home-left {
-	padding: 0 2rem;
-	display: grid;
-	grid-template-columns: 1fr;
-	align-items: end;
 }
 
 .home-main {
@@ -51,69 +40,18 @@
 	color: #fff;
 }
 
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-/* img.bg { */
-/* Set rules to fill background */
-/* min-height: 100%;
-	min-width: 1024px; */
-
-/* Set up proportionate scaling */
-/* width: 100%;
-	height: auto; */
-
-/* Set up positioning */
-/* position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-} */
-
-/* body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0;
-	height: 100%;
-	background: rgba(68, 68, 68, 0.5);
-	opacity: 0.8;
-} */
-
-/* body::after {
-	content: '';
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-	background: rgba(68, 68, 68, 0.5);
-} */
-
-/* Media Query - 1124px screen or smaller */
-@media (max-width: 1124px) {
-	.home-left {
-	}
-
-	.home-nav-links {
-	}
-}
-
-@media (max-width: 871px) {
-	.home {
-		grid-template-columns: 1fr;
-		overflow: hidden;
-	}
-
-	.home-nav-links {
-	}
-}
-
+/* Media Query - 482px screen or smaller */
 @media (max-width: 482px) {
 	.home-nav-links {
 		grid-template-columns: 1fr;
 	}
 }
 
+/* Media Query - 398px screen or smaller */
 @media (max-width: 398px) {
 	.home {
 		overflow-y: visible;
 	}
 }
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */

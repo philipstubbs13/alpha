@@ -1,21 +1,22 @@
+// import React
 import React, { Component } from 'react';
+// import react-router-dom for linking.
 import { Link } from 'react-router-dom';
+// import Header component
+import Header from '../../Header';
 // import CSS
 import './Home.css';
-// import background image
-import wolf from '../../../images/wolf3.jpg';
 
 class Home extends Component {
 	render() {
 		return (
 			<div className="home">
-				<div className="home-left">
-					<header className="home-header">
-						<h1 className="lg-heading">
-							Phil <span>Stubbs</span>
-						</h1>
-						<h2 className="sm-heading">Web Developer, Project Manager, and Writer</h2>
-					</header>
+				<div className="home-container">
+					<Header
+						firstPhrase="Phil"
+						secondPhrase="Stubbs"
+						subHeading="Web Developer, Project Manager, and Developer"
+					/>
 					<main className="home-main">
 						<h2 className="sm-heading home-secondary-heading">
 							When there are no more leaders to follow, you must become one.
@@ -33,7 +34,6 @@ class Home extends Component {
 						</div>
 					</main>
 				</div>
-				<div className="home-right">{/* <img src={wolf} alt="wolf" className="bg" /> */}</div>
 			</div>
 		);
 	}
