@@ -9,7 +9,7 @@ import Home from './components/layout/Home';
 import About from './components/layout/About';
 import Work from './components/layout/Work';
 import Contact from './components/layout/Contact';
-import Skills from './components/layout/Skills';
+import Resume from './components/layout/Resume';
 import Menu from './components/Menu';
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
 						<Route exact path="/work" component={Work} />
 						<Route exact path="/contact" component={Contact} />
 						<Route exact path="/menu" component={Menu} />
-						{/* <Route exact path="/skills" component={Skills} /> */}
+						<Route exact path="/resume" component={Resume} />
 					</Switch>
 				</div>
 			</Router>
