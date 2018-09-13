@@ -1,3 +1,29 @@
 .resume {
 	padding: 3.7rem;
 }
+
+.resume-main {
+	margin-top: 3rem;
+}
+
+.resume-section {
+	display: grid;
+	grid-template-columns: 1.5fr 4fr;
+	color: var(--app-light-color);
+	margin-top: 3rem;
+}
+
+.resume-section-title {
+	color: var(--app-secondary-color);
+}
+
+.expertise-section-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.tools-section-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}

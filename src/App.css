@@ -19,7 +19,9 @@ body {
 	background: var(--main-bg-color);
 }
 
-main {
+.about-main,
+.work-main,
+.resume-main {
 	min-height: calc(100vh - 60px);
 }
 
