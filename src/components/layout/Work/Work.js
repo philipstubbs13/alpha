@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Header from '../../Header';
 // import MenuButton component
 import MenuButton from '../../MenuButton';
+// import Footer component
+import Footer from '../../Footer';
 // import CSS for Projects page.
 import './Work.css';
 // import/require images
@@ -169,32 +171,39 @@ const projects = [
 class Work extends Component {
 	render() {
 		return (
-			<div className="work">
-				<div className="work-container">
-					<MenuButton />
-					<Header firstPhrase="My" secondPhrase="Work" subHeading="Here&#39;s what I&#39;m working on..." />
-					<main className="work-main">
-						{projects.map(project => (
-							<div className="project" key={project.id}>
-								<img src={project.image} alt={project.name} className="project-image" />
-								<div className="project-name">
-									<h2>{project.name}</h2>
+			<div>
+				<div className="work">
+					<div className="work-container">
+						<MenuButton />
+						<Header
+							firstPhrase="My"
+							secondPhrase="Work"
+							subHeading="Here&#39;s what I&#39;m working on..."
+						/>
+						<main className="work-main">
+							{projects.map(project => (
+								<div className="project" key={project.id}>
+									<img src={project.image} alt={project.name} className="project-image" />
+									<div className="project-name">
+										<h2>{project.name}</h2>
+									</div>
+									<a href={project.live} target="_blank" rel="noopener noreferrer">
+										<div className="live-link project-btn">
+											<i className="far fa-eye" /> Live
+										</div>
+									</a>
+									<a href={project.github} target="_blank" rel="noopener noreferrer">
+										<div className="project-link project-btn">
+											<i className="fab fa-github" /> GitHub
+										</div>
+									</a>
 								</div>
-								<a href={project.live} target="_blank" rel="noopener noreferrer">
-									<div className="live-link project-btn">
-										<i className="far fa-eye" /> Live
-									</div>
-								</a>
-								<a href={project.github} target="_blank" rel="noopener noreferrer">
-									<div className="project-link project-btn">
-										<i className="fab fa-github" /> GitHub
-									</div>
-								</a>
-							</div>
-						))}
-						;
-					</main>
+							))}
+							;
+						</main>
+					</div>
 				</div>
+				<Footer />
 			</div>
 		);
 	}

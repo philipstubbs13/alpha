@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Header from '../../Header';
 // import MenuButton component
 import MenuButton from '../../MenuButton';
+// import Footer component
+import Footer from '../../Footer';
 // import CSS
 import './Contact.css';
 // import/require social media icons/images
@@ -52,31 +54,34 @@ const socialIcons = [
 class Contact extends Component {
 	render() {
 		return (
-			<div className="contact">
-				<div className="contact-container">
-					<MenuButton />
-					<Header
-						firstPhrase="Contact"
-						secondPhrase="Me"
-						subHeading="Get in touch with me to get the ball rolling..."
-					/>
-					<main className="contact-main">
-						<div className="contact-card email">
-							<span>Email</span>
+			<div>
+				<div className="contact">
+					<div className="contact-container">
+						<MenuButton />
+						<Header
+							firstPhrase="Contact"
+							secondPhrase="Me"
+							subHeading="Get in touch with me to get the ball rolling..."
+						/>
+						<main className="contact-main">
+							<div className="contact-card email">
+								<span>Email</span>
+							</div>
+							<div className="contact-card phone">
+								<span>Phone</span>
+							</div>
+						</main>
+						<div className="social-icons">
+							{socialIcons.map(social => (
+								<a href={social.link} target="_blank" rel="noopener noreferrer" key={social.id}>
+									<img src={social.image} alt={social.name} className="social" />
+								</a>
+							))}
+							;
 						</div>
-						<div className="contact-card phone">
-							<span>Phone</span>
-						</div>
-					</main>
-					<div className="social-icons">
-						{socialIcons.map(social => (
-							<a href={social.link} target="_blank" rel="noopener noreferrer" key={social.id}>
-								<img src={social.image} alt={social.name} className="social" />
-							</a>
-						))}
-						;
 					</div>
 				</div>
+				<Footer />
 			</div>
 		);
 	}
