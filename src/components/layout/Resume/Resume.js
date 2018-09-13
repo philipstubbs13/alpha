@@ -1,5 +1,7 @@
 // import React
 import React, { Component } from 'react';
+// import react-router-dom for linking.
+import { Link } from 'react-router-dom';
 // import Resume component
 import Header from '../../Header';
 // import Footer component
@@ -110,6 +112,19 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
+									<h2>Apps Built</h2>
+									<p>What I'm building</p>
+								</div>
+								<div className="resume-section-content">
+									<p>To see what I have built or am currently building, check out my work.</p>
+									<Link to="/work" className="resume-work-link">
+										My Work
+									</Link>
+								</div>
+							</div>
+
+							<div className="resume-section">
+								<div className="resume-section-title">
 									<h2>Tools</h2>
 									<p>Things I'm learning</p>
 								</div>
@@ -153,6 +168,18 @@ class Resume extends Component {
 												<div className="tool">GitHub</div>
 												<div className="tool">Subversion</div>
 												<div className="tool">Visual Studio</div>
+											</div>
+										</div>
+										<div className="tools-subsection">
+											<h2>Technical Writing</h2>
+											<div className="tools-list">
+												<div className="tool">DITA</div>
+												<div className="tool">XMetaL</div>
+												<div className="tool">Oxygen</div>
+												<div className="tool">Arbortext</div>
+												<div className="tool">Acrolinx</div>
+												<div className="tool">SDL Publication Manager</div>
+												<div className="tool">Framemaker</div>
 											</div>
 										</div>
 									</div>

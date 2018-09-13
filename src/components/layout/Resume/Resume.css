@@ -26,7 +26,7 @@
 .tools-section-content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
+	grid-gap: 30px;
 }
 
 .tools-subsection {
@@ -44,4 +44,24 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 30px;
+}
+
+.resume-work-link {
+	background-color: var(--app-secondary-color);
+	padding: 0.7rem 1.7rem;
+	border: 1px solid var(--app-light-color);
+	margin-bottom: 0.3rem;
+	text-decoration: none;
+	color: var(--app-light-color);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	transition: all 0.5s ease-out;
+	font-weight: 500;
+	margin-top: 2rem;
+}
+
+.resume-work-link:hover {
+	background: var(--app-transparent-color);
+	color: var(--app-light-color);
+	border-color: var(--app-secondary-color);
 }
