@@ -26,6 +26,9 @@ class Menu extends Component {
 								<Link to="/work">My Work</Link>
 							</li>
 							<li className="nav-link">
+								<Link to="/resume">Resume</Link>
+							</li>
+							<li className="nav-link">
 								<Link to="/contact">Contact Me</Link>
 							</li>
 						</ul>
