@@ -117,12 +117,103 @@ class Resume extends Component {
 									<div className="tools-section-content">
 										<div className="tools-subsection">
 											<h2>Front End</h2>
+											<div className="tools-list">
+												<div className="tool">HTML</div>
+												<div className="tool">CSS</div>
+												<div className="tool">JavaScript</div>
+												<div className="tool">React</div>
+												<div className="tool">Materialize</div>
+												<div className="tool">Bootstrap</div>
+												<div className="tool">jQuery</div>
+												<div className="tool">Material UI</div>
+												<div className="tool">Semantic UI</div>
+												<div className="tool">Handlebars</div>
+												<div className="tool">PrimeReact</div>
+											</div>
 										</div>
 										<div className="tools-subsection">
 											<h2>Back End</h2>
+											<div className="tools-list">
+												<div className="tool">Node.js</div>
+												<div className="tool">MongoDB</div>
+												<div className="tool">Firebase</div>
+												<div className="tool">Express</div>
+												<div className="tool">MySQL</div>
+												<div className="tool">APIs</div>
+												<div className="tool">JSON</div>
+												<div className="tool">REST</div>
+												<div className="tool">Sequelize</div>
+												<div className="tool">Mongoose</div>
+											</div>
 										</div>
 										<div className="tools-subsection">
 											<h2>Version Control</h2>
+											<div className="tools-list">
+												<div className="tool">GIT</div>
+												<div className="tool">GitHub</div>
+												<div className="tool">Subversion</div>
+												<div className="tool">Visual Studio</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="resume-section">
+								<div className="resume-section-title">
+									<h2>Work Experience</h2>
+									<p>Where I've been</p>
+								</div>
+								<div className="resume-section-content">
+									<div className="work-section-content">
+										<div className="work-subsection">
+											<h2>
+												<b>Medtronic</b> | Technical Writer | Mounds View, MN | 2017 - Present
+											</h2>
+											<ul>
+												<li>
+													Build and update the online help and user documentation for the
+													Paceart Optima System (a patient and device management software
+													application).
+												</li>
+												<li>
+													Collaborate with engineering and human factors to create a patient
+													manual for a home remote monitor that receives information from a
+													patient's heart device and relays that information to the patient's
+													doctor.
+												</li>
+												<li>
+													● Work closely with development and human factors to update the
+													online help for the Reveal LINQ Mobile Manager app (an app used by
+													clinics to interrogate a patient's implanted heart monitor).
+												</li>
+											</ul>
+										</div>
+										<div className="work-subsection">
+											<h2>
+												<b>Oracle</b> | Technical Writer | Nashua, NH | 2014 - 2016
+											</h2>
+											<ul>
+												<li>
+													Used DITA and CCMS authoring tools, such as Arbortext and SDL
+													Publication Manager, to create and develop documentation that helps
+													users install, configure, and effectively use Oracle software.
+												</li>
+												<li>
+													Ensured deliverables were accurate and complete by testing the
+													documents for each release.
+												</li>
+												<li>
+													Researched and analyzed information about a new product or feature
+													by interviewing key subject matter experts and working hands-on with
+													the product to quickly learn technical concepts.
+												</li>
+												<li>
+													Established good working relationships with team members and
+													contacts in development, quality assurance, and product management
+													by regularly communicating project status each sprint.
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
