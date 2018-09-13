@@ -5,6 +5,7 @@
 	--app-secondary-color: #7bad7b;
 	--app-light-color: #fff;
 	--app-dark-color: black;
+	--app-transparent-color: rgba(0, 0, 0, 0);
 }
 
 html,
@@ -53,7 +54,7 @@ header {
 }
 
 .btn:hover {
-	background: rgba(0, 0, 0, 0);
+	background: var(--app-transparent-color);
 	color: var(--app-dark-color);
 	font-weight: 500;
 }
@@ -67,6 +68,7 @@ a {
 	color: var(--app-light-color);
 }
 
+/* Media Query - 1124px size screen or smaller. */
 @media screen and (max-width: 1124px) {
 	.lg-heading {
 		font-size: 4rem;
@@ -77,6 +79,7 @@ a {
 	}
 }
 
+/* Media Query - 550px size screen or smaller. */
 @media screen and (max-width: 550px) {
 	.lg-heading {
 		font-size: 4rem;

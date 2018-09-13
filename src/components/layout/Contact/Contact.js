@@ -61,8 +61,12 @@ class Contact extends Component {
 						subHeading="Get in touch with me to get the ball rolling..."
 					/>
 					<main className="contact-main">
-						<div className="contact-card">philipstubbs13@gmail.com</div>
-						<div className="contact-card">952-454-3933</div>
+						<div className="contact-card email">
+							<span>Email</span>
+						</div>
+						<div className="contact-card phone">
+							<span>Phone</span>
+						</div>
 					</main>
 					<div className="social-icons">
 						{socialIcons.map(social => (
