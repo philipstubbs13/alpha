@@ -161,6 +161,34 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
+									<h2>Education</h2>
+									<p>My studies</p>
+								</div>
+								<div className="resume-section-content">
+									<div className="education-section-content">
+										<div className="education-subsection">
+											<h2>Full Stack Web Development Certificate</h2>
+											<ul>
+												<li>University of Minnesota</li>
+												<li>Completed May 2018</li>
+											</ul>
+										</div>
+										<div className="education-subsection">
+											<h2>B.S. in Scientific and Technical Communication</h2>
+											<ul>
+												<li>University of Minnesota</li>
+												<li>Graduated August 2013</li>
+												<li>
+													<b>GPA 3.974</b>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="resume-section">
+								<div className="resume-section-title">
 									<h2>Work Experience</h2>
 									<p>Where I've been</p>
 								</div>
