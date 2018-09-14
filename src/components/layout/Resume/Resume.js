@@ -10,6 +10,8 @@ import Footer from '../../Footer';
 import MenuButton from '../../MenuButton';
 // import CSS
 import './Resume.css';
+// import resume
+import ResumePDF from '../../../resume.pdf';
 
 class Resume extends Component {
 	render() {
@@ -17,6 +19,9 @@ class Resume extends Component {
 			<div>
 				<div className="resume">
 					<div className="resume-container">
+						<a href={ResumePDF} target="_blank" rel="noopener noreferrer">
+							<i className="fas fa-print fa-2x" />
+						</a>
 						<MenuButton />
 						<Header
 							firstPhrase="My"
@@ -194,17 +199,18 @@ class Resume extends Component {
 								<div className="resume-section-content">
 									<div className="education-section-content">
 										<div className="education-subsection">
-											<h2>Full Stack Web Development Certificate</h2>
+											<h2>Full Stack Web Development</h2>
 											<ul>
 												<li>University of Minnesota</li>
 												<li>Completed May 2018</li>
 											</ul>
 										</div>
 										<div className="education-subsection">
-											<h2>B.S. in Scientific and Technical Communication</h2>
+											<h2>Scientific and Technical Communication</h2>
 											<ul>
 												<li>University of Minnesota</li>
 												<li>Graduated August 2013</li>
+												<li>Bachelor of Science</li>
 												<li>
 													<b>GPA 3.974</b>
 												</li>

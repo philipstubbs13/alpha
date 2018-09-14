@@ -13,6 +13,18 @@
 	margin-top: 3rem;
 }
 
+.fa-print {
+	position: absolute;
+	z-index: 3;
+	left: 15px;
+	cursor: pointer;
+	color: var(--app-light-color);
+}
+
+.fa-print:hover {
+	color: var(--app-secondary-color);
+}
+
 .resume-section-title {
 	color: var(--app-secondary-color);
 }
