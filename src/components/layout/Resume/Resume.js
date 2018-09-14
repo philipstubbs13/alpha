@@ -13,6 +13,169 @@ import './Resume.css';
 // import resume
 import ResumePDF from '../../../resume.pdf';
 
+const frontEndTools = [
+	{
+		id: 0,
+		tool: 'HTML',
+	},
+	{
+		id: 1,
+		tool: 'CSS',
+	},
+	{
+		id: 2,
+		tool: 'JavaScript',
+	},
+	{
+		id: 3,
+		tool: 'React',
+	},
+	{
+		id: 4,
+		tool: 'jQuery',
+	},
+	{
+		id: 5,
+		tool: 'Material UI',
+	},
+	{
+		id: 6,
+		tool: 'Semantic UI',
+	},
+	{
+		id: 7,
+		tool: 'Handlebars',
+	},
+	{
+		id: 8,
+		tool: 'Handlebars',
+	},
+	{
+		id: 9,
+		tool: 'PrimeReact',
+	},
+];
+
+const backEndTools = [
+	{
+		id: 0,
+		tool: 'Node.js',
+	},
+	{
+		id: 1,
+		tool: 'MongoDB',
+	},
+	{
+		id: 2,
+		tool: 'Firebase',
+	},
+	{
+		id: 3,
+		tool: 'Express',
+	},
+	{
+		id: 4,
+		tool: 'APIs',
+	},
+	{
+		id: 5,
+		tool: 'MySQL',
+	},
+	{
+		id: 6,
+		tool: 'JSON',
+	},
+	{
+		id: 7,
+		tool: 'REST',
+	},
+	{
+		id: 8,
+		tool: 'Sequelize',
+	},
+	{
+		id: 9,
+		tool: 'Mongoose',
+	},
+];
+
+const versionControlTools = [
+	{
+		id: 0,
+		tool: 'GIT',
+	},
+	{
+		id: 1,
+		tool: 'GitHub',
+	},
+	{
+		id: 2,
+		tool: 'Subversion',
+	},
+	{
+		id: 3,
+		tool: 'Visual Studio',
+	},
+];
+
+const techWritingTools = [
+	{
+		id: 0,
+		tool: 'DITA',
+	},
+	{
+		id: 1,
+		tool: 'XMetaL',
+	},
+	{
+		id: 2,
+		tool: 'Oxygen',
+	},
+	{
+		id: 3,
+		tool: 'Acrolinx',
+	},
+	{
+		id: 4,
+		tool: 'Arbortext',
+	},
+	{
+		id: 5,
+		tool: 'Framemaker',
+	},
+	{
+		id: 6,
+		tool: 'SDL Publication Manager',
+	},
+];
+
+const expertise = [
+	{
+		id: 0,
+		skill: 'Advanced CSS',
+	},
+	{
+		id: 1,
+		skill: 'JavaScript',
+	},
+	{
+		id: 2,
+		skill: 'React Apps',
+	},
+	{
+		id: 3,
+		skill: 'Project Management',
+	},
+	{
+		id: 4,
+		skill: 'User Centered Design',
+	},
+	{
+		id: 5,
+		skill: 'Databases',
+	},
+];
+
 class Resume extends Component {
 	render() {
 		return (
@@ -50,46 +213,14 @@ class Resume extends Component {
 								</div>
 								<div className="resume-section-content">
 									<div className="expertise-section-content">
-										<div className="expertise-subsection">
-											<h2>
-												{' '}
-												<i className="fas fa-check" />
-												&nbsp; Advanced CSS
-											</h2>
-										</div>
-										<div className="expertise-subsection">
-											<h2>
-												{' '}
-												<i className="fas fa-check" />
-												&nbsp; JavaScript
-											</h2>
-										</div>
-										<div className="expertise-subsection">
-											<h2>
-												{' '}
-												<i className="fas fa-check" />
-												&nbsp; React Apps
-											</h2>
-										</div>
-										<div className="expertise-subsection">
-											<h2>
-												{' '}
-												<i className="fas fa-check" />
-												&nbsp; Project Management
-											</h2>
-										</div>
-										<div className="expertise-subsection">
-											<h2>
-												<i className="fas fa-check" />
-												&nbsp;User Centered Design
-											</h2>
-										</div>
-										<div className="expertise-subsection">
-											<h2>
-												<i className="fas fa-check" />
-												&nbsp; Databases
-											</h2>
-										</div>
+										{expertise.map(expertise => (
+											<div className="expertise-subsection" key={expertise.id}>
+												<h2>
+													<i className="fas fa-check" />
+													&nbsp; {expertise.skill}
+												</h2>
+											</div>
+										))}
 									</div>
 								</div>
 							</div>
@@ -117,53 +248,41 @@ class Resume extends Component {
 										<div className="tools-subsection">
 											<h2>Front End</h2>
 											<div className="tools-list">
-												<div className="tool">HTML</div>
-												<div className="tool">CSS</div>
-												<div className="tool">JavaScript</div>
-												<div className="tool">React</div>
-												<div className="tool">Materialize</div>
-												<div className="tool">Bootstrap</div>
-												<div className="tool">jQuery</div>
-												<div className="tool">Material UI</div>
-												<div className="tool">Semantic UI</div>
-												<div className="tool">Handlebars</div>
-												<div className="tool">PrimeReact</div>
+												{frontEndTools.map(tool => (
+													<div className="tool" key={tool.id}>
+														{tool.tool}
+													</div>
+												))}
 											</div>
 										</div>
 										<div className="tools-subsection">
 											<h2>Back End</h2>
 											<div className="tools-list">
-												<div className="tool">Node.js</div>
-												<div className="tool">MongoDB</div>
-												<div className="tool">Firebase</div>
-												<div className="tool">Express</div>
-												<div className="tool">MySQL</div>
-												<div className="tool">APIs</div>
-												<div className="tool">JSON</div>
-												<div className="tool">REST</div>
-												<div className="tool">Sequelize</div>
-												<div className="tool">Mongoose</div>
+												{backEndTools.map(tool => (
+													<div className="tool" key={tool.id}>
+														{tool.tool}
+													</div>
+												))}
 											</div>
 										</div>
 										<div className="tools-subsection">
 											<h2>Version Control</h2>
 											<div className="tools-list">
-												<div className="tool">GIT</div>
-												<div className="tool">GitHub</div>
-												<div className="tool">Subversion</div>
-												<div className="tool">Visual Studio</div>
+												{versionControlTools.map(tool => (
+													<div className="tool" key={tool.id}>
+														{tool.tool}
+													</div>
+												))}
 											</div>
 										</div>
 										<div className="tools-subsection">
 											<h2>Technical Writing</h2>
 											<div className="tools-list">
-												<div className="tool">DITA</div>
-												<div className="tool">XMetaL</div>
-												<div className="tool">Oxygen</div>
-												<div className="tool">Arbortext</div>
-												<div className="tool">Acrolinx</div>
-												<div className="tool">Framemaker</div>
-												<div className="tool">SDL Publication Manager</div>
+												{techWritingTools.map(tool => (
+													<div className="tool" key={tool.id}>
+														{tool.tool}
+													</div>
+												))}
 											</div>
 										</div>
 									</div>
