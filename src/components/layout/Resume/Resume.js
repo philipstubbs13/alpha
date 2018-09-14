@@ -194,7 +194,7 @@ class Resume extends Component {
 						<main className="resume-main">
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Intro</h2>
+									<h2><i className="fas fa-code"></i> Intro</h2>
 									<p>What I'm all about</p>
 								</div>
 								<div className="resume-section-content">
@@ -208,7 +208,7 @@ class Resume extends Component {
 							</div>
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Expertise</h2>
+									<h2><i className="fab fa-react"></i> Expertise</h2>
 									<p>What I'm good at</p>
 								</div>
 								<div className="resume-section-content">
@@ -227,7 +227,7 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Apps Built</h2>
+									<h2><i className="fas fa-mobile-alt"></i> Apps Built</h2>
 									<p>What I'm building</p>
 								</div>
 								<div className="resume-section-content">
@@ -240,7 +240,7 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Tools</h2>
+									<h2><i className="fas fa-wrench"></i> Tools</h2>
 									<p>Things I'm learning</p>
 								</div>
 								<div className="resume-section-content">
@@ -291,7 +291,7 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Education</h2>
+									<h2><i className="fas fa-graduation-cap"></i> Education</h2>
 									<p>My studies</p>
 								</div>
 								<div className="resume-section-content">
@@ -320,7 +320,7 @@ class Resume extends Component {
 
 							<div className="resume-section">
 								<div className="resume-section-title">
-									<h2>Work Experience</h2>
+									<h2><i className="fas fa-globe-americas"></i> Work Experience</h2>
 									<p>Where I've been</p>
 								</div>
 								<div className="resume-section-content">

@@ -9,7 +9,7 @@ class MenuButton extends Component {
 		console.log('menu click');
 	};
 
-	render() {
+  render() {
 		return (
 			<div>
 				<Link to="/menu">
