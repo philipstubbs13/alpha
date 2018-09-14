@@ -36,15 +36,10 @@ class Resume extends Component {
 								</div>
 								<div className="resume-section-content">
 									<p>
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, perspiciatis,
-										optio, ullam deserunt veritatis impedit eius soluta unde magnam excepturi cumque
-										eveniet doloribus? Saepe quasi, quas quisquam iste reprehenderit reiciendis.
-									</p>
-
-									<p>
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione sed
-										nihil rem qui reiciendis vitae! A error aut odit cum dicta! Exercitationem
-										praesentium, ut mollitia distinctio et amet numquam?
+										Hi, I'm Phil, a web developer living and working in Minnesota. I build and
+										design simple, clean, and unique user interfaces. In particular, I'm passionate
+										about finding ways to improve the user experience of the web by learning and
+										using the latest web technologies.
 									</p>
 								</div>
 							</div>
@@ -56,60 +51,44 @@ class Resume extends Component {
 								<div className="resume-section-content">
 									<div className="expertise-section-content">
 										<div className="expertise-subsection">
-											<h2>Advanced CSS</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates.
-											</p>
+											<h2>
+												{' '}
+												<i className="fas fa-check" />
+												&nbsp; Advanced CSS
+											</h2>
 										</div>
 										<div className="expertise-subsection">
-											<h2>JavaScript</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates. consectetur quidem ut deserunt commodi, laudantium corporis
-												qui ea voluptates.
-											</p>
+											<h2>
+												{' '}
+												<i className="fas fa-check" />
+												&nbsp; JavaScript
+											</h2>
 										</div>
 										<div className="expertise-subsection">
-											<h2>React Apps</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates.
-											</p>
+											<h2>
+												{' '}
+												<i className="fas fa-check" />
+												&nbsp; React Apps
+											</h2>
 										</div>
 										<div className="expertise-subsection">
-											<h2>Project Management</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates.
-											</p>
+											<h2>
+												{' '}
+												<i className="fas fa-check" />
+												&nbsp; Project Management
+											</h2>
 										</div>
 										<div className="expertise-subsection">
-											<h2>User Centered Design</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates. consectetur quidem ut deserunt commodi, laudantium corporis
-												qui ea voluptates.
-											</p>
+											<h2>
+												<i className="fas fa-check" />
+												&nbsp;User Centered Design
+											</h2>
 										</div>
 										<div className="expertise-subsection">
-											<h2>Databases</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo
-												consequuntur, totam perferendis quae rem aspernatur ex nam est a
-												consectetur quidem ut deserunt commodi, laudantium corporis qui ea
-												voluptates.
-											</p>
+											<h2>
+												<i className="fas fa-check" />
+												&nbsp; Databases
+											</h2>
 										</div>
 									</div>
 								</div>
