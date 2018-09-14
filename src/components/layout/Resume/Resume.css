@@ -47,7 +47,7 @@
 
 .tools-list {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 3px;
 	margin-top: 1rem;
 }
@@ -76,4 +76,46 @@
 	background: var(--app-transparent-color);
 	color: var(--app-light-color);
 	border-color: var(--app-secondary-color);
+}
+
+/* Media Query - 828px screen or smaller */
+@media (max-width: 828px) {
+	.resume-section {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Media Query - 735px screen or smaller */
+@media (max-width: 735px) {
+	.expertise-section-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Media Query - 703px screen or smaller */
+@media (max-width: 703px) {
+	.education-section-content {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Media Query - 544px screen or smaller */
+@media (max-width: 544px) {
+	.tools-list {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Media Query - 735px screen or smaller */
+@media (max-width: 735px) {
+	.expertise-section-content {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Media Query - 389px screen or smaller */
+@media (max-width: 389px) {
+	.education-section-content {
+		grid-template-columns: 1fr;
+	}
 }

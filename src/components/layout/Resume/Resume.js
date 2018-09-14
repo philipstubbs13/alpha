@@ -183,8 +183,8 @@ class Resume extends Component {
 												<div className="tool">Oxygen</div>
 												<div className="tool">Arbortext</div>
 												<div className="tool">Acrolinx</div>
-												<div className="tool">SDL Publication Manager</div>
 												<div className="tool">Framemaker</div>
+												<div className="tool">SDL Publication Manager</div>
 											</div>
 										</div>
 									</div>
