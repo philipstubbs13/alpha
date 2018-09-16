@@ -10,7 +10,7 @@ import Footer from '../../Footer';
 import MenuButton from '../../MenuButton';
 // import CSS
 import './Resume.css';
-// import resume
+// import resume pdf
 import ResumePDF from '../../../resume.pdf';
 
 const frontEndTools = [
