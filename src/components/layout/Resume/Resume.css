@@ -41,6 +41,10 @@
 	grid-gap: 30px;
 }
 
+.resume-section-content, .work-section-content {
+  font-size: 20px;
+}
+
 .tools-subsection {
 	margin-top: 10px;
 }

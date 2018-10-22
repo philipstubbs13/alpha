@@ -10,31 +10,31 @@ import './Home.css';
 class Home extends Component {
 	render() {
 		return (
-			<div className="home">
-				<div className="home-container">
-					<Header
-						firstPhrase="Phil"
-						secondPhrase="Stubbs"
-						subHeading="Developer, Project Manager, and Writer"
-					/>
-					<main className="home-main">
-						<h2 className="sm-heading home-secondary-heading">
+      <div className="home">
+        <div className="home-container">
+          <Header
+            firstPhrase="Phil"
+            secondPhrase="Stubbs"
+            subHeading="Developer, Project Manager, and Writer"
+          />
+          <main className="home-main">
+            <h2 className="sm-heading home-secondary-heading">
 							When there are no more leaders to follow, you must become one.
-						</h2>
-						<div className="home-nav-links">
-							<Link to="/about" className="btn  home-btn">
+            </h2>
+            <div className="home-nav-links">
+              <Link to="/about" className="btn  home-btn">
 								About Me
-							</Link>
-							<Link to="/work" className="btn home-btn">
+              </Link>
+              <Link to="/work" className="btn home-btn">
 								My Work
-							</Link>
-							<Link to="/contact" className="home-btn btn">
+              </Link>
+              <Link to="/contact" className="home-btn btn">
 								Contact Me
-							</Link>
-						</div>
-					</main>
-				</div>
-			</div>
+              </Link>
+            </div>
+          </main>
+        </div>
+      </div>
 		);
 	}
 }

@@ -54,35 +54,35 @@ const socialIcons = [
 class Contact extends Component {
 	render() {
 		return (
-			<div>
-				<div className="contact">
-					<div className="contact-container">
-						<MenuButton />
-						<Header
-							firstPhrase="Contact"
-							secondPhrase="Me"
-							subHeading="Get in touch with me to get the ball rolling..."
-						/>
-						<main className="contact-main">
-							<div className="contact-card email">
-								<span>Email</span>
-							</div>
-							<div className="contact-card phone">
-								<span>Phone</span>
-							</div>
-						</main>
-						<div className="social-icons">
-							{socialIcons.map(social => (
-								<a href={social.link} target="_blank" rel="noopener noreferrer" key={social.id}>
-									<img src={social.image} alt={social.name} className="social" />
-								</a>
+      <div>
+        <div className="contact">
+          <div className="contact-container">
+            <MenuButton />
+            <Header
+              firstPhrase="Contact"
+              secondPhrase="Me"
+              subHeading="Get in touch with me to get the ball rolling..."
+            />
+            <main className="contact-main">
+              <div className="contact-card email">
+                <span>Email</span>
+              </div>
+              <div className="contact-card phone">
+                <span>Phone</span>
+              </div>
+            </main>
+            <div className="social-icons">
+              {socialIcons.map(social => (
+                <a href={social.link} target="_blank" rel="noopener noreferrer" key={social.id}>
+                  <img src={social.image} alt={social.name} className="social" />
+                </a>
 							))}
 							;
-						</div>
-					</div>
-				</div>
-				<Footer />
-			</div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
 		);
 	}
 }

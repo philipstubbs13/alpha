@@ -179,209 +179,209 @@ const expertise = [
 class Resume extends Component {
 	render() {
 		return (
-			<div>
-				<div className="resume">
-					<div className="resume-container">
-						<a href={ResumePDF} target="_blank" rel="noopener noreferrer">
-							<i className="fas fa-print fa-2x" />
-						</a>
-						<MenuButton />
-						<Header
-							firstPhrase="My"
-							secondPhrase="Resume"
-							subHeading="Web Developer, Project Manager, and Writer"
-						/>
-						<main className="resume-main">
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fas fa-code"></i> Intro</h2>
-									<p>What I'm all about</p>
-								</div>
-								<div className="resume-section-content">
-									<p>
-										Hi, I'm Phil, a web developer living and working in Minnesota. I build and
-										design simple, clean, and unique user interfaces. In particular, I'm passionate
-										about finding ways to improve the user experience of the web by learning and
-										using the latest web technologies.
-									</p>
-								</div>
-							</div>
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fab fa-react"></i> Expertise</h2>
-									<p>What I'm good at</p>
-								</div>
-								<div className="resume-section-content">
-									<div className="expertise-section-content">
-										{expertise.map(expertise => (
-											<div className="expertise-subsection" key={expertise.id}>
-												<h2>
-													<i className="fas fa-check" />
-													&nbsp; {expertise.skill}
-												</h2>
-											</div>
+      <div>
+        <div className="resume">
+          <div className="resume-container">
+            <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-print fa-2x" />
+            </a>
+            <MenuButton />
+            <Header
+              firstPhrase="My"
+              secondPhrase="Resume"
+              subHeading="Developer, Project Manager, and Writer"
+            />
+            <main className="resume-main">
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fas fa-code" /> Intro</h2>
+                  <p>What I&#39;m all about</p>
+                </div>
+                <div className="resume-section-content">
+                  <p>
+										Hi, I&#39;m Phil, a web developer living and working in Minnesota.
+                    I build and design simple, clean, and unique user interfaces.
+                    In particular, I&#39;m passionate
+										about finding ways to improve the user experience of the
+                    web by learning and using the latest web technologies.
+                  </p>
+                </div>
+              </div>
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fab fa-react" /> Expertise</h2>
+                  <p>What I&#39;m good at</p>
+                </div>
+                <div className="resume-section-content">
+                  <div className="expertise-section-content">
+                    {expertise.map(expertise => (
+                      <div className="expertise-subsection" key={expertise.id}>
+                        <h2>
+                          <i className="fas fa-check" />
+                          {expertise.skill}
+                        </h2>
+                      </div>
 										))}
-									</div>
-								</div>
-							</div>
+                  </div>
+                </div>
+              </div>
 
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fas fa-mobile-alt"></i> Apps Built</h2>
-									<p>What I'm building</p>
-								</div>
-								<div className="resume-section-content">
-									<p>To see what I have built or am currently building, check out my work.</p>
-									<Link to="/work" className="resume-work-link">
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fas fa-mobile-alt" /> Apps Built</h2>
+                  <p>What I&#39;m building</p>
+                </div>
+                <div className="resume-section-content">
+                  <p>To see what I have built or am currently building, check out my work.</p>
+                  <Link to="/work" className="resume-work-link">
 										My Work
-									</Link>
-								</div>
-							</div>
+                  </Link>
+                </div>
+              </div>
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fas fa-wrench" /> Tools</h2>
+                  <p>Things I&#39;m learning</p>
+                </div>
+                <div className="resume-section-content">
+                  <div className="tools-section-content">
+                    <div className="tools-subsection">
+                      <h2>Front End</h2>
+                      <div className="tools-list">
+                        {frontEndTools.map(tool => (
+                          <div className="tool" key={tool.id}>
+                            {tool.tool}
+                          </div>
+												))}
+                      </div>
+                    </div>
+                    <div className="tools-subsection">
+                      <h2>Back End</h2>
+                      <div className="tools-list">
+                        {backEndTools.map(tool => (
+                          <div className="tool" key={tool.id}>
+                            {tool.tool}
+                          </div>
+												))}
+                      </div>
+                    </div>
+                    <div className="tools-subsection">
+                      <h2>Version Control</h2>
+                      <div className="tools-list">
+                        {versionControlTools.map(tool => (
+                          <div className="tool" key={tool.id}>
+                            {tool.tool}
+                          </div>
+												))}
+                      </div>
+                    </div>
+                    <div className="tools-subsection">
+                      <h2>Technical Writing</h2>
+                      <div className="tools-list">
+                        {techWritingTools.map(tool => (
+                          <div className="tool" key={tool.id}>
+                            {tool.tool}
+                          </div>
+												))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fas fa-wrench"></i> Tools</h2>
-									<p>Things I'm learning</p>
-								</div>
-								<div className="resume-section-content">
-									<div className="tools-section-content">
-										<div className="tools-subsection">
-											<h2>Front End</h2>
-											<div className="tools-list">
-												{frontEndTools.map(tool => (
-													<div className="tool" key={tool.id}>
-														{tool.tool}
-													</div>
-												))}
-											</div>
-										</div>
-										<div className="tools-subsection">
-											<h2>Back End</h2>
-											<div className="tools-list">
-												{backEndTools.map(tool => (
-													<div className="tool" key={tool.id}>
-														{tool.tool}
-													</div>
-												))}
-											</div>
-										</div>
-										<div className="tools-subsection">
-											<h2>Version Control</h2>
-											<div className="tools-list">
-												{versionControlTools.map(tool => (
-													<div className="tool" key={tool.id}>
-														{tool.tool}
-													</div>
-												))}
-											</div>
-										</div>
-										<div className="tools-subsection">
-											<h2>Technical Writing</h2>
-											<div className="tools-list">
-												{techWritingTools.map(tool => (
-													<div className="tool" key={tool.id}>
-														{tool.tool}
-													</div>
-												))}
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fas fa-graduation-cap" /> Education</h2>
+                  <p>My studies</p>
+                </div>
+                <div className="resume-section-content">
+                  <div className="education-section-content">
+                    <div className="education-subsection">
+                      <h2>Full Stack Web Development</h2>
+                      <ul>
+                        <li>University of Minnesota</li>
+                        <li>Completed May 2018</li>
+                      </ul>
+                    </div>
+                    <div className="education-subsection">
+                      <h2>Scientific and Technical Communication</h2>
+                      <ul>
+                        <li>University of Minnesota</li>
+                        <li>Graduated August 2013</li>
+                        <li>Bachelor of Science</li>
+                        <li>
+                          <b>GPA 3.974</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fas fa-graduation-cap"></i> Education</h2>
-									<p>My studies</p>
-								</div>
-								<div className="resume-section-content">
-									<div className="education-section-content">
-										<div className="education-subsection">
-											<h2>Full Stack Web Development</h2>
-											<ul>
-												<li>University of Minnesota</li>
-												<li>Completed May 2018</li>
-											</ul>
-										</div>
-										<div className="education-subsection">
-											<h2>Scientific and Technical Communication</h2>
-											<ul>
-												<li>University of Minnesota</li>
-												<li>Graduated August 2013</li>
-												<li>Bachelor of Science</li>
-												<li>
-													<b>GPA 3.974</b>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div className="resume-section">
-								<div className="resume-section-title">
-									<h2><i className="fas fa-globe-americas"></i> Work Experience</h2>
-									<p>Where I've been</p>
-								</div>
-								<div className="resume-section-content">
-									<div className="work-section-content">
-										<div className="work-subsection">
-											<h2>
-												<b>Medtronic</b> | Technical Writer | Mounds View, MN | 2017 - Present
-											</h2>
-											<ul>
-												<li>
+              <div className="resume-section">
+                <div className="resume-section-title">
+                  <h2><i className="fas fa-globe-americas" /> Work Experience</h2>
+                  <p>Where I&#39;ve been</p>
+                </div>
+                <div className="resume-section-content">
+                  <div className="work-section-content">
+                    <div className="work-subsection">
+                      <h2>
+                        <b>Medtronic</b> | Technical Writer | Mounds View, MN | 2017 - Present
+                      </h2>
+                      <ul>
+                        <li>
 													Build and update the online help and user documentation for the
 													Paceart Optima System (a patient and device management software
 													application).
-												</li>
-												<li>
+                        </li>
+                        <li>
 													Collaborate with engineering and human factors to create a patient
 													manual for a home remote monitor that receives information from a
-													patient's heart device and relays that information to the patient's
-													doctor.
-												</li>
-												<li>
-													● Work closely with development and human factors to update the
+													patient&#39;s heart device and relays that information to
+                          the patient&#39;s doctor.
+                        </li>
+                        <li>
+													Work closely with development and human factors to update the
 													online help for the Reveal LINQ Mobile Manager app (an app used by
-													clinics to interrogate a patient's implanted heart monitor).
-												</li>
-											</ul>
-										</div>
-										<div className="work-subsection">
-											<h2>
-												<b>Oracle</b> | Technical Writer | Nashua, NH | 2014 - 2016
-											</h2>
-											<ul>
-												<li>
+													clinics to interrogate a patient&#39;s implanted heart monitor).
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="work-subsection">
+                      <h2>
+                        <b>Oracle</b> | Technical Writer | Nashua, NH | 2014 - 2016
+                      </h2>
+                      <ul>
+                        <li>
 													Used DITA and CCMS authoring tools, such as Arbortext and SDL
 													Publication Manager, to create and develop documentation that helps
 													users install, configure, and effectively use Oracle software.
-												</li>
-												<li>
+                        </li>
+                        <li>
 													Ensured deliverables were accurate and complete by testing the
 													documents for each release.
-												</li>
-												<li>
+                        </li>
+                        <li>
 													Researched and analyzed information about a new product or feature
 													by interviewing key subject matter experts and working hands-on with
 													the product to quickly learn technical concepts.
-												</li>
-												<li>
+                        </li>
+                        <li>
 													Established good working relationships with team members and
 													contacts in development, quality assurance, and product management
 													by regularly communicating project status each sprint.
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</main>
-					</div>
-				</div>
-				<Footer />
-			</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+        <Footer />
+      </div>
 		);
 	}
 }

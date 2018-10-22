@@ -9,6 +9,8 @@ import Footer from '../../Footer';
 // import CSS for Projects page.
 import './Work.css';
 // import/require images
+const EduVents = require('../../../images/edue_logo.png');
+const Sheltr = require('../../../images/sheltr-b2.svg');
 const Swag = require('../../../images/swag.png');
 const HealthTracker = require('../../../images/healthtracker2.png');
 const ClickMe = require('../../../images/clickme2.png');
@@ -33,6 +35,20 @@ const BasketballScraper = require('../../../images/scraper.png');
 // to render all of my projects to the projects page.
 // This keeps the code DRY.
 const projects = [
+  {
+		id: 19,
+		name: 'Sheltr',
+		live: 'https://tcsw-homeless.firebaseapp.com/',
+		github: 'https://github.com/philipstubbs13/tcsw-sheltrus',
+		image: Sheltr,
+	},
+  {
+		id: 20,
+		name: 'EduVents',
+		live: 'https://learner-47455.firebaseapp.com/',
+		github: 'https://github.com/melinda-schmitz/CodeSwitch2018',
+		image: EduVents,
+	},
 	{
 		id: 0,
 		name: 'Running with Swag',
@@ -171,40 +187,40 @@ const projects = [
 class Work extends Component {
 	render() {
 		return (
-			<div>
-				<div className="work">
-					<div className="work-container">
-						<MenuButton />
-						<Header
-							firstPhrase="My"
-							secondPhrase="Work"
-							subHeading="Here&#39;s what I&#39;m working on..."
-						/>
-						<main className="work-main">
-							{projects.map(project => (
-								<div className="project" key={project.id}>
-									<img src={project.image} alt={project.name} className="project-image" />
-									<div className="project-name">
-										<h2>{project.name}</h2>
-									</div>
-									<a href={project.live} target="_blank" rel="noopener noreferrer">
-										<div className="live-link project-btn">
-											<i className="far fa-eye" /> Live
-										</div>
-									</a>
-									<a href={project.github} target="_blank" rel="noopener noreferrer">
-										<div className="project-link project-btn">
-											<i className="fab fa-github" /> GitHub
-										</div>
-									</a>
-								</div>
+      <div>
+        <div className="work">
+          <div className="work-container">
+            <MenuButton />
+            <Header
+              firstPhrase="My"
+              secondPhrase="Work"
+              subHeading="Here&#39;s what I&#39;m working on..."
+            />
+            <main className="work-main">
+              {projects.map(project => (
+                <div className="project" key={project.id}>
+                  <img src={project.image} alt={project.name} className="project-image" />
+                  <div className="project-name">
+                    <h2>{project.name}</h2>
+                  </div>
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <div className="live-link project-btn">
+                      <i className="far fa-eye" /> Live
+                    </div>
+                  </a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <div className="project-link project-btn">
+                      <i className="fab fa-github" /> GitHub
+                    </div>
+                  </a>
+                </div>
 							))}
 							;
-						</main>
-					</div>
-				</div>
-				<Footer />
-			</div>
+            </main>
+          </div>
+        </div>
+        <Footer />
+      </div>
 		);
 	}
 }
