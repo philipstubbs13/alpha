@@ -9,6 +9,7 @@ import Footer from '../../Footer';
 // import CSS for Projects page.
 import './Work.css';
 // import/require images
+const ArtOwl = require('../../../images/art.png');
 const EduVents = require('../../../images/edue_logo.png');
 const Sheltr = require('../../../images/sheltr-b2.svg');
 const Swag = require('../../../images/swag.png');
@@ -35,6 +36,13 @@ const BasketballScraper = require('../../../images/scraper.png');
 // to render all of my projects to the projects page.
 // This keeps the code DRY.
 const projects = [
+  {
+		id: 20,
+		name: 'ArtOwl',
+		live: 'http://artowl.co/',
+		github: 'https://github.com/philipstubbs13/',
+		image: ArtOwl,
+	},
   {
 		id: 19,
 		name: 'Sheltr',

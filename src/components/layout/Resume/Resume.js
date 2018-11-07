@@ -97,6 +97,14 @@ const backEndTools = [
 		id: 9,
 		tool: 'Mongoose',
 	},
+  {
+		id: 10,
+		tool: 'AWS',
+	},
+  {
+		id: 11,
+		tool: 'GraphQL',
+	},
 ];
 
 const versionControlTools = [
