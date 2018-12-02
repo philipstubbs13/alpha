@@ -114,3 +114,72 @@ After you clone the repository, you can navigate to the project root directory (
 * <b>firebase.json</b>: Firebase configuration file required to deploy the site to Firebase.
 * <b>package.json</b>: Lists the project dependencies and their version numbers. It also contains various scripts to start the server, create a production build, etc.
 * <b>yarn.lock</b>: Dependency tree for the project. Lists the project dependencies and their versions.
+
+## <a name="getting-started"></a> Getting started
+
+The following section will take you through the steps of setting up this app and getting it running locally on your computer.
+
+If you don't want to set up this project locally and just want to see the deployed application, go to <http://www.philjstubbs.com>.
+
+To set up this application locally on your computer, perform the following steps:
+
+  1. [Clone the repository](#clone-repository)
+  2. [Install Node.js](#install-node)
+  3. [Install yarn](#install-yarn)
+  4. [Install the project dependencies](#dependencies)
+  5. [Start the React development server](#start-server)
+
+###  <a name="clone-repository"></a> 1. Clone the repository
+The first step is to clone the project repository to a local directory on your computer. To clone the repository, run the following commands:
+
+```bash
+git clone https://github.com/philipstubbs13/alpha.git
+cd ./alpha
+```
+
+###  <a name="install-node"></a> 2. Install Node.js
+
+<p>If you don't already have Node.js installed on your computer, you can install the latest version <a href="https://nodejs.org/en/">here</a>.</p>
+
+### <a name="install-yarn"></a> 3. Install yarn
+
+To be able to install the dependencies and start the application locally, you will need to install yarn. Yarn is a package manager like npm.
+
+To install yarn globally, run the following command:
+<pre>npm install -g yarn</pre>
+
+For more information about yarn and other installation options, see the yarn documentation: <https://yarnpkg.com/en/>.
+
+### <a name="dependencies"></a> 4. Install the project dependencies
+
+<p>The following packages are dependencies to the project.<p>
+
+<ul>
+  <li><b>firebase</b> - tools and infrastructure used to host app (https://www.npmjs.com/package/firebase).</li>
+  <li><b>prop-types</b> - Used to document the intended types of props passed to components (https://www.npmjs.com/package/prop-types)</li>
+  <li><b>react</b> - package for accessing React (https://www.npmjs.com/package/react)</li>
+  <li><b>react-dom</b> - serves as the entry point of the DOM-related rendering paths (https://www.npmjs.com/package/react-dom).</li>
+  <li><b>react-router-dom</b> - a third party routing library (https://www.npmjs.com/package/react-router-dom)</li>
+  <li><b>react-scripts</b>: package that includes scripts and configuration used by Create React App (https://www.npmjs.com/package/react-scripts)</li>
+</ul>
+
+<p>This project also uses ESLint, which includes the following dependencies:</p>
+<ul>
+  <li><b>babel-eslint</b></li>
+  <li><b>eslint</b></li>
+  <li><b>eslint-config-airbnb</b></li>
+  <li><b>eslint-plugin-import</b></li>
+  <li><b>eslint-plugin-jsx-a11y</b></li>
+  <li><b>eslint-plugin-react</b></li>
+</ul>
+
+<p>Version information for each of these packages is available in the <b>package.json</b> file in the project root directory (<b>alpha</b>) directory.</p>
+
+<p>After you clone the repository to a local directory, run the following command in the root directory to install the required dependencies:</p>
+<pre>yarn install</pre>
+
+###  <a name="start-server"></a> 5. Start the React development server.
+<p>After performing all of the setup steps in the <b>Getting started</b> section, navigate to the project root directory (<b>alpha</b>) and run the following command to start the React development server.</p>
+<pre>yarn start</pre>
+
+<p>After the development server has started, a Chrome browser window should open, and you should see the landing/home screen. If the browser does not automatically open after the server starts, you can verify that the application is working locally on your computer by opening Chrome and going to <a href="http://localhost:3000">http://localhost:3000</a>. Note that by default, the development server will try to start up on port 3000. If port 3000 is already in use on your computer, then the development server will use a different port.
