@@ -183,3 +183,69 @@ For more information about yarn and other installation options, see the yarn doc
 <pre>yarn start</pre>
 
 <p>After the development server has started, a Chrome browser window should open, and you should see the landing/home screen. If the browser does not automatically open after the server starts, you can verify that the application is working locally on your computer by opening Chrome and going to <a href="http://localhost:3000">http://localhost:3000</a>. Note that by default, the development server will try to start up on port 3000. If port 3000 is already in use on your computer, then the development server will use a different port.
+
+## <a name="deployment"></a> Deploying the app
+
+This app is deployed to Firebase using Firebase Hosting. For more information on hosting with Firebase, see <https://firebase.google.com/docs/hosting/>. To deploy the app, you will need to build a production version of the app as well as have the Firebase CLI installed.
+
+1. If not already installed, install the Firebase CLI globally by running the following command:
+<pre>npm install -g firebase-tools</pre>
+
+This installs the firebase command globally. To update to the latest version, simply re-run the same command.
+
+2. To connect your local machine to your Firebase account and obtain access to the Firebase project, run the following command:
+<pre>firebase login</pre>
+
+3. Change directory to the  project root directory, <b>alpha</b>.
+
+4. If you have deployed the app before, there will be a build directory inside <b>alpha</b>. Delete the existing <b>build</b> directory.
+
+5. Run the following command to build a clean, production version of the app.
+<pre>yarn build</pre>
+<p>This command creates a directory called <b>build</b> inside of the <b>alpha</b> directory.</p>
+
+6. Commit changes to git (if not done already).
+
+7. Run the following command to deploy your changes:
+
+```bash
+firebase deploy
+```
+
+This command deploys the project to <https://alpha-41c92.firebaseapp.com/> on firebase.
+
+## <a name="technologies-used"></a> Technologies used to create app
+
+* [Back end technolgies](#Backend)
+* [Front end technologies](#Frontend)
+* [Other technologies](#Other)
+
+### <a name ="Backend"></a> Back end technologies
+
+* Firebase Hosting (<https://firebase.google.com/docs/hosting/>)
+
+### <a name="Frontend"></a> Front end technologies
+
+* HTML5
+* CSS
+* Javascript (ES6)
+* React (<https://reactjs.org/>)
+* CSS Grid system for page layout (<https://github.com/crowdfavorite/css-grid>)
+
+### <a name="Other"></a> Other technologies
+
+* ESLint
+
+## <a name="future"></a> Direction for future development
+
+Source code will be developed over time to handle bug fixes, incorporate new features, and add new projects I am working on.
+
+The following is a list of potential enhancements for future code development.
+
+* Add a blog page that I can use to go more in depth about particulatr projects that users have questions and comments about.
+* Add a backend database that can be used to store blog posts, user comments/questions, my projects, resume data, etc.
+* Add a contact form to the contact me page.
+
+## <a name ="Issues"></a> Issues
+
+<p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/alpha/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
