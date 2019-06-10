@@ -1,13 +1,12 @@
-// import React
+// React related imports
 import React, { Component } from 'react';
-// import react-router-dom for linking.
 import { Link } from 'react-router-dom';
-// import Resume component
+
+// Internal components
 import Header from '../../Header';
-// import Footer component
 import Footer from '../../Footer';
-// import MenuButton component
 import MenuButton from '../../MenuButton';
+
 // import CSS
 import './Resume.css';
 // import resume pdf
@@ -160,7 +159,7 @@ const techWritingTools = [
 const expertise = [
 	{
 		id: 0,
-		skill: 'Advanced CSS',
+		skill: 'React',
 	},
 	{
 		id: 1,
@@ -168,7 +167,7 @@ const expertise = [
 	},
 	{
 		id: 2,
-		skill: 'React Apps',
+		skill: 'Node',
 	},
 	{
 		id: 3,
@@ -176,11 +175,11 @@ const expertise = [
 	},
 	{
 		id: 4,
-		skill: 'User Centered Design',
+		skill: 'CSS',
 	},
 	{
 		id: 5,
-		skill: 'Databases',
+		skill: 'NoSQL',
 	},
 ];
 
@@ -197,7 +196,7 @@ class Resume extends Component {
             <Header
               firstPhrase="My"
               secondPhrase="Resume"
-              subHeading="Developer, Project Manager, and Writer"
+              subHeading="Web Engineer, Project Manager, and Writer"
             />
             <main className="resume-main">
               <div className="resume-section">
@@ -207,7 +206,7 @@ class Resume extends Component {
                 </div>
                 <div className="resume-section-content">
                   <p>
-										Hi, I&#39;m Phil, a web developer living and working in Minnesota.
+										Hi, I&#39;m Phil, a web engineer living and working in Minnesota.
                     I build and design simple, clean, and unique user interfaces.
                     In particular, I&#39;m passionate
 										about finding ways to improve the user experience of the
@@ -222,11 +221,11 @@ class Resume extends Component {
                 </div>
                 <div className="resume-section-content">
                   <div className="expertise-section-content">
-                    {expertise.map(expertise => (
-                      <div className="expertise-subsection" key={expertise.id}>
+                    {expertise.map(expertiseItem => (
+                      <div className="expertise-subsection" key={expertiseItem.id}>
                         <h2>
-                          <i className="fas fa-check" />
-                          {expertise.skill}
+                          <i className="fas fa-check" />{' '}
+                          {expertiseItem.skill}
                         </h2>
                       </div>
 										))}
@@ -240,10 +239,7 @@ class Resume extends Component {
                   <p>What I&#39;m building</p>
                 </div>
                 <div className="resume-section-content">
-                  <p>To see what I have built or am currently building, check out my work.</p>
-                  <Link to="/work" className="resume-work-link">
-										My Work
-                  </Link>
+                  <p>To see what I have built or am currently building, check out my <Link className="resume-work-link" to="/work">my work</Link>.</p>
                 </div>
               </div>
               <div className="resume-section">
@@ -335,23 +331,59 @@ class Resume extends Component {
                   <div className="work-section-content">
                     <div className="work-subsection">
                       <h2>
-                        <b>Medtronic</b> | Technical Writer | Mounds View, MN | 2017 - Present
+                        <b>Parallax</b> | Software Engineer | Edina, MN | 2019 - Present
                       </h2>
                       <ul>
                         <li>
-													Build and update the online help and user documentation for the
-													Paceart Optima System (a patient and device management software
-													application).
+                            Write and style React components using Storybook to meet
+                            the requirements of the mocks, fulfill the user stories,
+                            and create a reusable, easy to maintain component library.
                         </li>
                         <li>
-													Collaborate with engineering and human factors to create a patient
+                          Follow the test driven development (TDD) process by writing
+                          unit tests with Jest, helping identify errors quickly, reduce
+                          time spent on rework, and increase the confidence and quality
+                          of the application.
+                        </li>
+                        <li>
+                          Wire up the components from the component library into the
+                          software application using React Hooks for managing state
+                          inside React functional components and using an internal API
+                          for reading and writing data to and from Cloud Firestore
+                          (a NoSQL cloud database).
+                        </li>
+                        <li>
+                          Collaborate with team members by giving status updates during
+                          daily stand ups, communicating any roadblocks identified during
+                          the two week sprint, working with the right people to resolve
+                          roadblocks quickly, and participating in retrospectives at the
+                          end of each sprint to identify what went well and what the team
+                          can improve going forward.
+                        </li>
+                        <li>Develop charts using React AnyChart to help users visualize
+                          data within the application.
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="work-subsection">
+                      <h2>
+                        <b>Medtronic</b> | Technical Writer | Mounds View, MN | 2017 - 2019
+                      </h2>
+                      <ul>
+                        <li>
+                          Built and updated the online help and user documentation for the
+                          Paceart Optima System (a patient and device management
+                          software application).
+                        </li>
+                        <li>
+													Collaborated with engineering and human factors to create a patient
 													manual for a home remote monitor that receives information from a
 													patient&#39;s heart device and relays that information to
                           the patient&#39;s doctor.
                         </li>
                         <li>
-													Work closely with development and human factors to update the
-													online help for the Reveal LINQ Mobile Manager app (an app used by
+													Worked closely with development and human factors to update the
+													online help for Reveal LINQ Mobile Manager (an app used by
 													clinics to interrogate a patient&#39;s implanted heart monitor).
                         </li>
                       </ul>

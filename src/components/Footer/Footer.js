@@ -6,10 +6,10 @@ import './Footer.css';
 class Footer extends Component {
 	render() {
 		return (
-			<footer id="main-footer">
-				Phil Stubbs <br />
-				Copyright &copy; 2018
-			</footer>
+      <footer id="main-footer">
+        Phil Stubbs <br />
+        Copyright &copy; 2019
+      </footer>
 		);
 	}
 }

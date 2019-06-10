@@ -1,9 +1,10 @@
-// import React
+// React related imports
 import React, { Component } from 'react';
-// import react-router-dom for linking.
 import { Link } from 'react-router-dom';
-// import Header component
+
+// Internal UI components
 import Header from '../../Header';
+
 // import CSS
 import './Home.css';
 
@@ -15,7 +16,7 @@ class Home extends Component {
           <Header
             firstPhrase="Phil"
             secondPhrase="Stubbs"
-            subHeading="Developer, Project Manager, and Writer"
+            subHeading="Web Engineer, Project Manager, and Writer"
           />
           <main className="home-main">
             <h2 className="sm-heading home-secondary-heading">

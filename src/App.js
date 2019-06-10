@@ -15,7 +15,7 @@ import Resume from './components/layout/Resume';
 import Menu from './components/Menu';
 
 function initializeReactGA() {
-  console.log('initialize React Google Analytics');
+  console.log('initializing React Google Analytics');
   ReactGA.initialize('UA-134062947-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
   console.log(window.location.pathname + window.location.search);
